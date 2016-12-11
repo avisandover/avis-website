@@ -30,10 +30,15 @@
     left: 20px;
     top: 80px;
     z-index: 1;
-    @include transition(0.5s);
+    @include transition-property(transform);
+    @include transition-duration(0.5s);
     
     @media (min-width: $switchover-width + 1) {
       display: none;
+    }
+    
+    &:hover {
+      color: yellowgreen;
     }
   }
   
@@ -65,17 +70,14 @@
     
     .map {
       text-align: center;
-      a, img {
+      a, img { 
         width: 100%;
       }
     }
     
     h4 {
       margin-top: 20px;
-      margin-bottom: 5px;
       color: white;
-      font-size: 16px;
-      font-weight: bold;
     }
     
     hr {
@@ -89,7 +91,6 @@
       
       li {
         font-style: italic;
-        margin-bottom: 7px;
         font-size: 13px;
         
         a {
@@ -102,7 +103,7 @@
   
   .page-content {
     margin-left: $sidebar-width;
-    padding: 20px 10px 20px 30px;
+    padding: 20px 0;
     @include transition(0.5s);
 
     @media (max-width: $switchover-width) {
@@ -111,35 +112,62 @@
     
     > div {
       max-width: 900px;
-      margin: auto;
-    }
-    
-    h3 {
-      margin-bottom: 0px;
-      font-size: 18px;
+      margin: 0 auto 20px;
+      padding: 0 30px;
+      @include clearfix;
     }
     
     h4 {
-      margin: 25px auto 5px;
-      font-size: 16px;
-    }
-    
-    hr {
-      border-color: darkgreen;
-      border-width: 2px;
-      margin: 5px 0 15px;
+      margin-top: 25px;
     }
     
     .reservation-center {
-      background-color: red;
-      height: 300px;
+      width: calc(100% - 250px);
+      float: left;
+      padding-right: 40px;
+      
+      @media (max-width: $switchover-width) {
+        width: 100%;
+        padding-right: 0px;
+      }
+      
+      .figures {
+        margin: 10px auto;
+        text-align: center;
+        
+        figure {
+          display: inline-block;
+          margin: 10px;
+        }
+      }
     }
     
     .reservation-side {
-      width: 150px;
-      float: right;
-      height: 500px;
-      background-color: aqua;
+      width: 250px;
+      float: left;
+      
+      .map {
+        text-align: center;
+        margin-top: 20px;
+        
+        a, img {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+      
+      @media (max-width: $switchover-width) {
+        width: 100%;
+      }
+      
+      h5 {
+        margin-top: 20px;
+      }
+    }
+    
+    footer {
+      float: left;
+      width: 100%;
     }
   }
 }

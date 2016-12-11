@@ -1,0 +1,9 @@
+#trails-guide {
+  @include clearfix;
+  
+  img {
+    float: right;
+    margin: 10px 20px;
+    @include transform(rotate(10deg))
+  }
+}
