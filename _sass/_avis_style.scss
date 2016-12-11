@@ -1,0 +1,114 @@
+body {
+  margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+#main-nav {
+  $min-width: 768px;
+  $max-width: $min-width - 1;
+  $nav-color: darkgreen;
+  $nav-color-hover: $nav-color * 0.8;
+  $link-color: #f0f0f0;
+  $link-color-hover: white;
+  
+  background-color: $nav-color;
+  font-weight: 600;
+  margin-bottom: 0px;
+  
+  a, .icon-bar {
+    color: $link-color;
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+  
+  a.logo {
+    text-decoration: none;
+    
+    img {
+      box-sizing: border-box;
+      padding: 6px 0 5px 20px;
+    }
+    
+    span {
+      font-weight: 700;
+      @media (max-width: 450px) {
+        display: none;
+      }
+    }
+    
+    img, span {
+      height: 50px;
+    }
+  }
+  
+  .navbar-toggle.collapsed {
+    border-color: $link-color;
+    &:hover, &:focus {
+      background-color: $nav-color;
+    }
+  }
+  
+  .navbar-nav {
+    > li > a {
+      &:hover {
+        background-color: $nav-color-hover;
+      }
+    }
+  
+    .dropdown {
+
+      &:hover {
+        > a {
+          background-color: $nav-color-hover;
+        }
+        
+        @media (min-width: $min-width) {
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+      
+      .dropdown-menu a {
+        @media (min-width: $min-width) {
+          color: black;
+        }
+      }
+
+      &.open {
+        .dropdown-toggle {
+          background-color: $nav-color-hover;
+        }
+
+        .dropdown-menu li:hover {
+          @media (max-width: $max-width) {
+            background-color: $nav-color-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  border-top: solid;
+  border-width: thin;
+  border-color: gainsboro;
+  text-align: center;
+  padding: 10px 0;
+  
+  p {
+    margin-bottom: 0px; 
+    
+    &:first-child {
+      text-transform: capitalize;
+      font-weight: bold;
+      color: darkgreen;
+    }
+  }
+}

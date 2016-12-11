@@ -1,0 +1,63 @@
+{% include head.html %}
+
+<body>
+  
+  {% include nav.html %}
+
+  <div id="reservations">
+    <input type="checkbox" id="sidebar-toggler">
+    <label for="sidebar-toggler" class="toggle">☰</label>
+    
+    <div class="page-content">
+      <div>
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <p class="map">
+        <a href="#">
+          <img src="/assets/img/AVISmap.gif">
+          Interactive Map
+        </a>
+      </p>
+      <h4>Reservations</h4>
+      <hr>
+      <ul>
+        <li><a href="/bakers.html">Baker's Meadow</a></li>
+        <li><a href="#">Burns Reservation</a></li>
+        <li><a href="#">Collins Reservation</a></li>
+        <li><a href="#">Deer Jump Reservation</a></li>
+        <li>John Gardener Reservation</li>
+        <li><a href="#">Goldsmith Woodlands</a></li>
+        <li><a href="#">Ann Rawlins Greene Reservation</a></li>
+        <li><a href="#">Hammond Reservation</a></li>
+        <li>Andover Highlands</li>
+        <li><a href="#">Indian Ridge Reservation</a></li>
+        <li><a href="#">Peggy Keck Reservation</a></li>
+        <li><a href="#">Lupine Road Reservation</a></li>
+        <li><a href="#">Purdon Reservation</a></li>
+        <li><a href="#">Harold R. Rafton Reservation</a></li>
+        <li><a href="#">Sakowich Reservation</a></li>
+        <li><a href="#">Sanborn Reservation</a></li>
+        <li><a href="#">Shawsheen River Reservation</a></li>
+        <li>Shawsheen Road Reservation</li>
+        <li><a href="#">Christopher and Lillian Sherman Reservation</a></li>
+        <li><a href="#">Skug River Reservation</a></li>
+        <li><a href="#">Nat Smith Reservation</a></li>
+        <li><a href="#">Spalding Reservation</a></li>
+        <li><a href="#">Stanley Reservation</a></li>
+        <li><a href="#">Sunset Rock Reservation</a></li>
+        <li><a href="#">Amy Gordon Taft Reservation</a></li>
+        <li><a href="#">Turtle Mound-Future Reservation</a></li>
+        <li><a href="#">Vale Reservation</a></li>
+        <li><a href="#">West Parish Meadow</a></li>
+        <li><a href="#">Wilkinson Reservation</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="/assets/js/jquery-2.1.4.min.js"></script>
+  <script src="/assets/js/bootstrap.js"></script>
+  <script src="/assets/js/functions.js"></script>
+</body>

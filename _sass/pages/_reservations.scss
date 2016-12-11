@@ -1,0 +1,145 @@
+#reservations {
+  $switchover-width: 768px;
+  $sidebar-width: 180px;
+  $link-color: rgba(255,255,255,0.9);
+  $link-hover-color: white;
+  
+  #sidebar-toggler {
+    display: none;
+    
+    &:checked {
+      @media (max-width: $switchover-width) {
+        ~ .sidebar {
+          @include transform(translateX($sidebar-width));
+        }
+        
+        ~ .toggle {
+          @include transform(translateX($sidebar-width));
+        }
+        
+        ~ .page-content {
+          @include transform(translateX($sidebar-width));
+        }
+      }
+    }
+  }
+  
+  .toggle {
+    font-size: 32px;
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    z-index: 1;
+    @include transition(0.5s);
+    
+    @media (min-width: $switchover-width + 1) {
+      display: none;
+    }
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    bottom: 0px;
+    width: $sidebar-width;
+    padding: 20px 10px;
+    background-color: rgba(0,80,0,1);
+    overflow-y: auto;
+    @include transition(0.5s);
+    
+    @media (max-width: $switchover-width) {
+      left: -$sidebar-width;
+    }
+    
+    a {
+      color: $link-color;
+      &:hover, &:active {
+        color: $link-hover-color;
+      }
+    }
+    
+    li {
+      color: $link-color;
+    }
+    
+    .map {
+      text-align: center;
+      a, img {
+        width: 100%;
+      }
+    }
+    
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    hr {
+      margin: 0px 0 10px;
+      border-top-color: white;
+    }
+    
+    ul {
+      padding-left: 0px;
+      list-style: none;
+      
+      li {
+        font-style: italic;
+        margin-bottom: 7px;
+        font-size: 13px;
+        
+        a {
+          font-style: normal;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  .page-content {
+    margin-left: $sidebar-width;
+    padding: 20px 10px 20px 30px;
+    @include transition(0.5s);
+
+    @media (max-width: $switchover-width) {
+      margin-left: 50px;
+    }
+    
+    > div {
+      max-width: 900px;
+      margin: auto;
+    }
+    
+    h3 {
+      margin-bottom: 0px;
+      font-size: 18px;
+    }
+    
+    h4 {
+      margin: 25px auto 5px;
+      font-size: 16px;
+    }
+    
+    hr {
+      border-color: darkgreen;
+      border-width: 2px;
+      margin: 5px 0 15px;
+    }
+    
+    .reservation-center {
+      background-color: red;
+      height: 300px;
+    }
+    
+    .reservation-side {
+      width: 150px;
+      float: right;
+      height: 500px;
+      background-color: aqua;
+    }
+  }
+}
