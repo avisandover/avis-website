@@ -1,0 +1,30 @@
+.contact {
+  
+  .spacer {
+    padding-top: 10px;
+    border-top: 0px;
+  }
+  
+  .header-row {
+    td {
+      font-weight: bold;
+      border-top: 0px;
+      color: darkgreen; 
+    }
+  }
+  
+  .table td {
+    vertical-align: middle;
+  }
+}
+
+#wardens {
+  td:nth-child(3) {
+    min-width: 11em;
+  }
+  
+  td:nth-child(1) p {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+}

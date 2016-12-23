@@ -57,6 +57,10 @@
       left: -$sidebar-width;
     }
     
+    h4 > a {
+      color: white;
+    }
+    
     a {
       color: $link-color;
       &:hover, &:active {
@@ -129,6 +133,13 @@
       @media (max-width: $switchover-width) {
         width: 100%;
         padding-right: 0px;
+      }
+      
+      > figure {
+        float: right;
+        text-align: center;
+        margin-left: 20px;
+        margin-bottom: 20px;
       }
       
       .figures {

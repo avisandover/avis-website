@@ -12,9 +12,12 @@
     
     td:nth-child(1) {
       text-align: center;
-      height: 120px;
+      
+      @media (max-width: 600px) {
+        display: none;
+      }
+      
       img {
-        max-height: 120px;
         max-width: 200px;
       }
     }

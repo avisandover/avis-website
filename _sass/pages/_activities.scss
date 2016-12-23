@@ -1,0 +1,42 @@
+#activities {
+  
+  h4 {
+    margin-top: 20px;
+  }
+  
+  ul + h4 {
+    margin-top: 40px;
+  }
+  
+  ul > li {
+    margin-bottom: 0px;
+    line-height: 150%;
+  }
+  
+  img {
+    margin: 20px 0;
+    max-width: 100%;
+    max-height: 320px;
+  }
+  
+  table {
+    margin-bottom: 5px;
+  }
+  
+  thead {
+    font-weight: bold;
+  }
+  
+  figure {
+    margin-bottom: 10px;
+    img {
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+    figcaption {
+      text-align: center;
+      width: 275px;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+#keck {
+  a.evolution {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0,100,0,0.7);
+    padding: 10px;
+    max-width: 250px;
+    color: white;
+    font-size: 14px;
+    @include transition(0.2s);  
+    
+    &:hover, &:focus {
+      text-decoration: none;
+      color: white;
+      background-color: rgba(0,100,0,0.9);
+    }
+  }
+}
+
+.keck-botany {
+  a.btn {
+    margin-bottom: 20px;
+  }
+  
+  table.abbrevs td {
+    border-width: 0px;
+  }
+  
+  thead {
+    font-weight: bold;
+  }
+}
