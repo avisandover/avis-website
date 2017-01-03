@@ -1,0 +1,20 @@
+#donate {
+  table {
+    td:nth-child(2) {
+      min-width: 100px;
+    }
+  }
+  
+  .thanks {
+    margin-top: 20px;
+  }
+}
+
+.thanks {
+  margin: 0 auto;
+  text-align: center;
+  color: darkgreen;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+}

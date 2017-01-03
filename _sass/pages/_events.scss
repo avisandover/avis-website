@@ -1,16 +1,11 @@
 #events {
   table {
     margin-bottom: 40px;
+    background-color: #f9f9f9;
   }
   
-
-  
-  tr:nth-child(1) {
-    td {
-      font-weight: bold;
-      color: darkgreen;
-      border-top: 0px;
-    }
+  td {
+    vertical-align: top;
   }
   
   @media (min-width: 768px) {

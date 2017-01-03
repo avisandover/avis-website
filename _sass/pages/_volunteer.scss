@@ -1,0 +1,15 @@
+#volunteer {
+  .lists {
+    margin: 20px 0 20px 30px;
+  }
+  
+  .volunteer-pictures {
+    font-size: 0px;
+    img {
+      width: 25%;
+      @media (max-width: 500px) {
+        width: 50%;
+      }
+    }
+  }
+}

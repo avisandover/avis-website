@@ -59,6 +59,21 @@
     }
   }
 
+  #news {
+    text-align: center;
+    background: url('/assets/img/white_paper.png');
+    padding: 5px 0 20px;
+    
+    .col-xs-12 > div {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    
+    p {
+      font-weight: bold;
+    }
+  }
+  
   #reservations {
     max-width: 1200px;
     text-align: center;
@@ -87,14 +102,14 @@
   #support {
     text-align: center;
     background-color: rgba(0,100,0,0.9);
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 
     .support-title {
       margin: 0 auto;
       max-width: 680px;
 
       h2 {
-        margin: 30px auto 20px;
+        margin: 30px auto 15px;
         font-weight: 700;
         color: white;
       }
@@ -103,6 +118,10 @@
         line-height: 1.5;
         color: white;
       }
+    }
+    
+    a.btn {
+      margin: 10px 10px 0 10px;
     }
   }
 

@@ -1,0 +1,143 @@
+#news {
+  $hide-width: 767px;
+  $enlarge-width: 1200px;
+  
+  $large-sidebar-width: 380px;
+  $small-sidebar-width: 200px;
+  
+  #sidebar-toggler {
+    display: none;
+    
+    &:checked {
+      @media (max-width: $hide-width) {
+        ~ .sidebar {
+          @include transform(translateX($small-sidebar-width));
+        }
+        
+        ~ .toggle {
+          @include transform(translateX($small-sidebar-width));
+        }
+        
+        ~ .page-content {
+          @include transform(translateX($small-sidebar-width));
+        }
+      }
+    }
+  }
+  
+  .toggle {
+    font-size: 32px;
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    z-index: 1;
+    @include transition-property(transform);
+    @include transition-duration(0.5s);
+    
+    @media (min-width: $hide-width + 1) {
+      display: none;
+    }
+    
+    &:hover {
+      color: yellowgreen;
+    }
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    bottom: 0px;
+    width: $small-sidebar-width;
+    padding: 20px 10px;
+    overflow-y: auto;
+    @include transition(0.5s);
+    
+    @media (min-width: $enlarge-width) {
+      width: $large-sidebar-width;
+    }
+    
+    @media (max-width: $hide-width) {
+      left: -$small-sidebar-width;
+    }
+    
+    p {
+      font-size: 13px;
+    }
+    
+    .row {
+      text-align: center;
+      img {
+        display: block;
+        max-width: 130px;
+        margin: 20px auto 5px;
+      }
+      
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  .page-content {
+    margin-left: $large-sidebar-width;
+    padding: 20px 0;
+    @include transition(0.5s);
+    
+    @media (max-width: $enlarge-width - 1) {
+      margin-left: $small-sidebar-width;
+    }
+    
+    @media (max-width: $hide-width) {
+      margin-left: 50px;
+    }
+    
+    hr {
+      margin-top: 40px;
+    }
+    
+    footer {
+      width: 100%;
+    }
+    
+    > div {
+      max-width: 900px;
+      margin: 0 auto 20px;
+      padding: 0 30px;
+      @include clearfix;
+      
+      > h2 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      
+      > img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        max-height: 300px;
+      }
+      
+      #greenway {
+        font-size: 0px;
+        text-align: center;
+        
+        img {
+          max-width: calc(25% - 10px);
+          padding: 10px 5px;
+          max-height: 300px;
+          display: inline-block;
+          
+        
+          @media (max-width: 930px) {
+            max-width: calc(50% - 10px);
+          }
+          
+          @media (max-width: $hide-width) {
+            max-width: calc(100% - 10px);
+          }
+        }
+      }
+    }
+  }
+}

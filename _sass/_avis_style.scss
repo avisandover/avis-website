@@ -136,13 +136,37 @@ footer {
   padding: 10px 0;
   
   p {
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     
     &:first-child {
       text-transform: capitalize;
       font-weight: bold;
       color: darkgreen;
     }
+  }
+  
+  .fb {
+    font-size: 15px;
+    margin-top: 5px;
+
+    img {
+      margin-left: 5px;
+    }
+  }
+}
+
+.table.avis-table {
+  background-color: whitesmoke;
+
+  td {
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+  thead td {
+    background-color: darkseagreen;
+    color: darkgreen;
+    font-weight: bold;
+    padding-right: 10px;
   }
 }
 
@@ -155,8 +179,7 @@ footer {
   
   .carousel-caption {
     background-color: rgba(0,0,0,0.3);
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding: 15px 5px;
   }
 
   .carousel-indicators {
