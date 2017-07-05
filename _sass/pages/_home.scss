@@ -58,8 +58,15 @@
       background-color: rgba(0,100,0,0.9);
     }
   }
-
-  #news {
+  
+  .white-row .col-xs-12 > div {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 40px 20px;
+  }
+  
+  .gray-row {
     text-align: center;
     background: url('/assets/img/white_paper.png');
     padding: 5px 0 20px;
