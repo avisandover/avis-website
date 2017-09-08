@@ -32,9 +32,9 @@ ul > li {
 #main-nav {
   $min-width: 768px;
   $max-width: $min-width - 1;
-  $nav-color: darkgreen;
+  $nav-color: #669966;
   $nav-color-hover: $nav-color * 0.8;
-  $link-color: #f0f0f0;
+  $link-color: #ffffff;
   $link-color-hover: white;
   
   background-color: $nav-color;
