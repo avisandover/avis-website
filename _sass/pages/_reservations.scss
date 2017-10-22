@@ -1,8 +1,8 @@
 #reservations {
   $switchover-width: 768px;
-  $sidebar-width: 180px;
-  $link-color: rgba(255,255,255,0.9);
-  $link-hover-color: white;
+  $sidebar-width: 200px;
+  $link-color: #4C5761;
+  $sidebar-background-color: #f4f4f7;
   
   #sidebar-toggler {
     display: none;
@@ -48,8 +48,8 @@
     top: 50px;
     bottom: 0px;
     width: $sidebar-width;
-    padding: 20px 10px;
-    background-color: rgba(102,153,102,1);
+    padding: 20px 12px 20px 10px;
+    background-color: $sidebar-background-color;
     overflow-y: auto;
     @include transition(0.5s);
     
@@ -57,36 +57,61 @@
       left: -$sidebar-width;
     }
     
-    h4 > a {
-      color: white;
-    }
-    
     a {
       color: $link-color;
-      &:hover, &:active {
-        color: $link-hover-color;
+      width: 100%;
+      display: inline-block;
+      padding: 5px 10px;
+      text-decoration: none;
+      
+      $hover-color: #D9E9C8;
+      &[href] {
+        font-style: normal;
+        &:hover, &:active {
+          background-color: $hover-color;
+          cursor: pointer;
+        }
+        &.active {
+          background-color: #CEE3B9;
+          font-weight: bold;
+          letter-spacing: 0px;
+          &:hover {
+            background-color: $hover-color;
+          }
+        }
       }
-    }
-    
-    li {
-      color: $link-color;
     }
     
     .map {
       text-align: center;
+      font-size: 12px;
       a, img { 
         width: 100%;
+      }
+      a {
+        font-size: 16px;
+        padding-bottom: 0px;
+      }
+      a:hover {
+        background-color: rgba(0, 0, 0, 0);
+        text-decoration: underline
       }
     }
     
     h4 {
       margin-top: 20px;
-      color: white;
+      margin-bottom: 0px;
+      width: 100%;
+      
+      a[href]:hover {
+        background-color: rgba(0, 0, 0, 0);
+        text-decoration: underline;
+      }
     }
     
     hr {
       margin: 0px 0 10px;
-      border-top-color: white;
+      border-top-color: #5b636a;
     }
     
     ul {
@@ -94,13 +119,9 @@
       list-style: none;
       
       li {
+        margin-bottom: 0px;
         font-style: italic;
-        font-size: 13px;
-        
-        a {
-          font-style: normal;
-          font-size: 14px;
-        }
+        font-size: 14px;
       }
     }
   }
