@@ -30,11 +30,11 @@
         <li><a href="/burns.html">Burns Reservation</a></li>
         <li><a href="/collins.html">Collins Reservation</a></li>
         <li><a href="/deer_jump.html">Deer Jump Reservation</a></li>
-        <li>John Gardener Reservation</li>
+        <li><a>John Gardener Reservation</a></li>
         <li><a href="/goldsmith.html">Goldsmith Woodlands</a></li>
         <li><a href="/annrawlings.html">Ann Rawlins Greene Reservation</a></li>
         <li><a href="/hammond.html">Hammond Reservation</a></li>
-        <li>Andover Highlands</li>
+        <li><a>Andover Highlands</a></li>
         <li><a href="/indianridge.html">Indian Ridge Reservation</a></li>
         <li><a href="/peggykeck.html">Peggy Keck Reservation</a></li>
         <li><a href="/lupine.html">Lupine Road Reservation</a></li>
@@ -43,7 +43,7 @@
         <li><a href="/sakowich.html">Sakowich Reservation</a></li>
         <li><a href="/sanborn.html">Sanborn Reservation</a></li>
         <li><a href="/shawsheenriver.html">Shawsheen River Reservation</a></li>
-        <li>Shawsheen Road Reservation</li>
+        <li><a>Shawsheen Road Reservation</a></li>
         <li><a href="/sherman.html">Christopher and Lillian Sherman Reservation</a></li>
         <li><a href="/skug.html">Skug River Reservation</a></li>
         <li><a href="/natsmith.html">Nat Smith Reservation</a></li>
@@ -60,4 +60,13 @@
   </div>
   <script src="/assets/js/jquery-2.1.4.min.js"></script>
   <script src="/assets/js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("div.sidebar ul a[href]").each(function() {
+        if (this.href == window.location.href) {
+            $(this).addClass("active");
+        }
+      });
+    });
+  </script>
 </body>
