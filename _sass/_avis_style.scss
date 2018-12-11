@@ -33,7 +33,7 @@ ul > li {
   $min-width: 768px;
   $max-width: $min-width - 1;
   $nav-color: #669966;
-  $nav-color-hover: $nav-color * 0.8;
+  $nav-color-hover: darken($nav-color, 30%);
   $link-color: #ffffff;
   $link-color-hover: white;
   
