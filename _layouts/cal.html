@@ -1,0 +1,75 @@
+{% include head.html %}
+
+<body>
+  
+  {% include nav.html %}
+  {{ content }}
+  {% include footer.html %}
+  
+  <script src="/assets/js/jquery-2.1.4.min.js"></script>
+  <script src="/assets/js/bootstrap.js"></script>
+
+    <link href='/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+    <link href='/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <script src='/fullcalendar/lib/moment.min.js'></script>
+    <script src='/fullcalendar/lib/jquery.min.js'></script>
+    <script src='/fullcalendar/fullcalendar.min.js'></script>
+    <script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,basicWeek,basicDay'
+      },
+    //   defaultDate: '2018-03-12',
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'New Year Day Hike',
+          start: '2019-01-01'
+        },
+        {
+          title: '50th Rafton Hike',
+          start: '2019-01-27'
+        },
+        {
+          title: 'Crows over Merrimack',
+          start: '2019-02-10'
+        },
+        {
+          title: 'Goldsmith Moonlight Hike',
+          start: '2019-02-10',
+          url: 'http://avisandover.org/'
+        },
+        {
+          title: 'History Exhibit',
+          start: '2019-02-15'
+        }
+      ]
+    });
+
+  });
+
+</script>
+<style>
+
+  body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+  }
+
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+</style>
+
+</body>
