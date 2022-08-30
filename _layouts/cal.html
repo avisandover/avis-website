@@ -1,295 +1,328 @@
 {% include head.html %}
 
 <body>
-  
+
   {% include nav.html %}
   {{ content }}
   {% include footer.html %}
-  
+
   <script src="/assets/js/jquery-2.1.4.min.js"></script>
   <script src="/assets/js/bootstrap.js"></script>
 
-    <link href='/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
-    <link href='/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
-    <script src='/fullcalendar/lib/moment.min.js'></script>
-    <script src='/fullcalendar/lib/jquery.min.js'></script>
-    <script src='/fullcalendar/fullcalendar.min.js'></script>
-    <script>
+  <link href='/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+  <link href='/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+  <script src='/fullcalendar/lib/moment.min.js'></script>
+  <script src='/fullcalendar/lib/jquery.min.js'></script>
+  <script src='/fullcalendar/fullcalendar.min.js'></script>
+  <script>
 
-  $(document).ready(function() {
+    $(document).ready(function () {
 
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,basicWeek,basicDay'
-      },
-    //   defaultDate: '2018-03-12',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-      { title: 'National Trails day',
-          start: "2022-06-04T00:00:00-00:00",
-          end: "2022-06-04T00:00:00-00:00",
-          url: "/events.html"
+      $('#calendar').fullCalendar({
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,basicWeek,basicDay'
         },
-      { title: 'Andover Climate Summit 2022 - Steam Exhibit',
-          start: "2022-04-09T10:00:00-05:00",
-          end: "2022-04-09T12:00:00-05:00",
-          url: "/events.html"
-        },
-      { title: 'Andover Climate Summit 2022 - Plenary Program',
-          start: "2022-04-08T13:00:00-05:00",
-          end: "2022-04-08T16:00:00-05:00",
-          url: "/events.html"
-        },
-        { title: 'Wardens Meeting',
-          start: "2021-11-08T19:00:00-05:00",
-          end: "2021-11-08T20:00:00-05:00",
-          url: "/events.html"
-        },
-        { title: 'Andover 375th anniversary challenge',
-          start: "2021-07-21T03:00:00-05:00",
-          end: "2022-05-06T16:00:00-05:00",
-          url: "/events.html"
-        },
-        { title: 'Deer Jump Reservation hike',
-          start: "2020-09-10T09:30:00-05:00",
-          end: "2020-09-10T11:30:00-05:00",
-          url: "/events.html"
-        },
-        { title: 'Goldsmith Woodlands nighttime snowshoe hike',
-          start: "2020-02-09T18:00:00-05:00",
-          end: "2020-02-09T20:00:00-05:00",
-          url: "/events.html"
-        },
-        { title: 'Harold R. Rafton snowshoe hike',
-          start: "2020-01-26T10:00:00-05:00",
-          end: "2020-01-26T12:00:00-05:00",
-          url: "/events.html"
-        },
-        { title: 'Snowshoe Excursion',
-          start: "2020-01-16T09:30:00-05:00",
-          end: "2020-01-16T11:30:00-05:00",
-          url: "/events.html"
-        },
-        { title: 'Amy Gordon Taft Reservation',
-          start: "2019-12-08T13:00:00-05:00",
-          end: "2019-12-08T16:00-05:00",
-          url: "/events.html"
-        },
-        { title: 'Skug River Reservation Hike',
-          start: "2019-11-21T09:30:00-05:00",
-          end: "2019-11-21T11:30:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Peggy Keck Reservation Hike',
-          start: "2019-11-10T13:00:00-05:00",
-          end: "2019-11-10T16:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Rafton Reservation Hike',
-          start: "2019-10-13T13:00:00-05:00",
-          end: "2019-10-13T16:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'New Year Day Hike',
-          start: "2019-01-01T10:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: '50th Rafton Hike',
-          start: "2019-01-27T10:00:00-05:00",
-          end: "2019-01-27T12:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Nature’s Nation: American Art and Environment',
-          start: "2019-02-02",
-          end: "2019-05-05",
-          url: "https://www.pem.org/exhibitions/natures-nation-american-art-and-environment",
-          color: '#ff9f89'
-        },
-        {
-          title: 'River in the Sky—Our Merrimack of Wintering Crows!',
-          start: "2019-02-10T14:00:00-05:00",
-          end: "2019-02-10T17:30:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Goldsmith Moonlight Hike',
-          start: "2019-02-10T18:00:00-05:00",
-          end: "2019-02-10T20:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'History Exhibit',
-          start: '2019-02-15',
-          end: "2019-08-23",
-          url: "http://andoverhistoryandculture.org/"
-        },
-        {
-          title: 'Iconic AVIS Reservations',
-          start: "2019-03-10T13:00:00-05:00",
-          end: "2019-03-10T16:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'AVIS Meeting',
-          start: "2019-03-13T19:00:00-05:00",
-          end: "2019-03-13T21:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Tuesdays with AVIS',
-          start: "2019-04-02T09:30:00-05:00",
-          end: "2019-04-02T12:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Annual Dinner',
-          start: "2019-04-10T18:00:00-05:00",
-          end: "2019-04-10T21:30:00-05:00",
-          url: "/avis125/annual-dinner.html"
-        },
-        {
-          title: 'Merrimack River Trail',
-          start: "2019-04-14T13:00:00-05:00",
-          end: "2019-04-14T16:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Tuesdays with AVIS',
-          start: "2019-04-16T09:30:00-05:00",
-          end: "2019-04-16T12:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Beaver nature walk',
-          start: "2019-05-04T09:30:00-05:00",
-          end: "2019-05-04T11:30:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Tuesdays with AVIS',
-          start: "2019-05-07T09:30:00-05:00",
-          end: "2019-05-07T12:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Indian Ridge Hike',
-          start: "2019-05-16T09:30:00-05:00",
-          end: "2019-05-16T11:30:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Shawsheen River Trail Hike',
-          start: "2019-05-19T09:30:00-05:00",
-          end: "2019-04-19T11:30:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Skug River Reservation Hike',
-          start: "2019-06-09T13:00:00-05:00",
-          end: "2019-06-09T16:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Tuesdays with AVIS',
-          start: "2019-06-04T09:30:00-05:00",
-          end: "2019-06-04T12:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'The AVIS Burns Reservation',
-          start: "2019-06-04T19:00:00-05:00",
-          end: "2019-06-04T20:30:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Beaver Hike',
-          start: "2019-06-04T09:30:00-05:00",
-          end: "2019-06-04T10:30:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'River Reservation Hike',
-          start: "2019-06-09T13:30:00-05:00",
-          end: "2019-06-09T16:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Native Wild Edibles with Russ Cohen',
-          start: "2019-06-13T19:00:00-05:00",
-          end: "2019-06-13T20:30:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Tuesdays with AVIS',
-          start: "2019-06-18T09:30:00-05:00",
-          end: "2019-06-18T12:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Rafton Reservation Hike',
-          start: "2019-06-23T13:00:00-05:00",
-          end: "2019-06-23T15:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Wild Edible Walk with Russ Cohen',
-          start: "2019-06-19T16:00:00-05:00",
-          end: "2019-06-19T18:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Tuesdays with AVIS',
-          start: "2019-07-16T09:30:00-05:00",
-          end: "2019-07-16T12:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Tuesdays with AVIS',
-          start: "2019-08-06T09:30:00-05:00",
-          end: "2019-08-06T12:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Five Reservation Bus Tour/Hike',
-          start: "2019-08-11T13:00:00-05:00",
-          end: "2019-08-11T16:00:00-05:00",
-          url: "/events.html"
-        },
-        {
-          title: 'Tuesdays with AVIS',
-          start: "2019-08-20T09:30:00-05:00",
-          end: "2019-08-20T12:00:00-05:00",
-          url: "/events.html"
-        }
-      ]
+        //   defaultDate: '2018-03-12',
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: [
+          {
+            title: 'Ballardvale Day',
+            start: "2022-10-15T10:00:00-00:00",
+            end: "2022-10-15T14:00:00-00:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Andover Day',
+            start: "2022-09-24T10:00:00-00:00",
+            end: "2022-09-24T16:00:00-00:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Casual Walk',
+            start: "2022-09-17T09:00:00-00:00",
+            end: "2022-08-17T12:00:00-00:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Trails & Sails',
+            start: "2022-08-16T00:00:00-00:00",
+            end: "2022-08-25T00:00:00-00:00",
+            url: "/events.html"
+          },
+          {
+            title: 'National Trails day',
+            start: "2022-06-04T00:00:00-00:00",
+            end: "2022-06-04T00:00:00-00:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Andover Climate Summit 2022 - Steam Exhibit',
+            start: "2022-04-09T10:00:00-05:00",
+            end: "2022-04-09T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Andover Climate Summit 2022 - Plenary Program',
+            start: "2022-04-08T13:00:00-05:00",
+            end: "2022-04-08T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Wardens Meeting',
+            start: "2021-11-08T19:00:00-05:00",
+            end: "2021-11-08T20:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Andover 375th anniversary challenge',
+            start: "2021-07-21T03:00:00-05:00",
+            end: "2022-05-06T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Deer Jump Reservation hike',
+            start: "2020-09-10T09:30:00-05:00",
+            end: "2020-09-10T11:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Goldsmith Woodlands nighttime snowshoe hike',
+            start: "2020-02-09T18:00:00-05:00",
+            end: "2020-02-09T20:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Harold R. Rafton snowshoe hike',
+            start: "2020-01-26T10:00:00-05:00",
+            end: "2020-01-26T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Snowshoe Excursion',
+            start: "2020-01-16T09:30:00-05:00",
+            end: "2020-01-16T11:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Amy Gordon Taft Reservation',
+            start: "2019-12-08T13:00:00-05:00",
+            end: "2019-12-08T16:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Skug River Reservation Hike',
+            start: "2019-11-21T09:30:00-05:00",
+            end: "2019-11-21T11:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Peggy Keck Reservation Hike',
+            start: "2019-11-10T13:00:00-05:00",
+            end: "2019-11-10T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Rafton Reservation Hike',
+            start: "2019-10-13T13:00:00-05:00",
+            end: "2019-10-13T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'New Year Day Hike',
+            start: "2019-01-01T10:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: '50th Rafton Hike',
+            start: "2019-01-27T10:00:00-05:00",
+            end: "2019-01-27T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Nature’s Nation: American Art and Environment',
+            start: "2019-02-02",
+            end: "2019-05-05",
+            url: "https://www.pem.org/exhibitions/natures-nation-american-art-and-environment",
+            color: '#ff9f89'
+          },
+          {
+            title: 'River in the Sky—Our Merrimack of Wintering Crows!',
+            start: "2019-02-10T14:00:00-05:00",
+            end: "2019-02-10T17:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Goldsmith Moonlight Hike',
+            start: "2019-02-10T18:00:00-05:00",
+            end: "2019-02-10T20:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'History Exhibit',
+            start: '2019-02-15',
+            end: "2019-08-23",
+            url: "http://andoverhistoryandculture.org/"
+          },
+          {
+            title: 'Iconic AVIS Reservations',
+            start: "2019-03-10T13:00:00-05:00",
+            end: "2019-03-10T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'AVIS Meeting',
+            start: "2019-03-13T19:00:00-05:00",
+            end: "2019-03-13T21:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Tuesdays with AVIS',
+            start: "2019-04-02T09:30:00-05:00",
+            end: "2019-04-02T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Annual Dinner',
+            start: "2019-04-10T18:00:00-05:00",
+            end: "2019-04-10T21:30:00-05:00",
+            url: "/avis125/annual-dinner.html"
+          },
+          {
+            title: 'Merrimack River Trail',
+            start: "2019-04-14T13:00:00-05:00",
+            end: "2019-04-14T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Tuesdays with AVIS',
+            start: "2019-04-16T09:30:00-05:00",
+            end: "2019-04-16T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Beaver nature walk',
+            start: "2019-05-04T09:30:00-05:00",
+            end: "2019-05-04T11:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Tuesdays with AVIS',
+            start: "2019-05-07T09:30:00-05:00",
+            end: "2019-05-07T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Indian Ridge Hike',
+            start: "2019-05-16T09:30:00-05:00",
+            end: "2019-05-16T11:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Shawsheen River Trail Hike',
+            start: "2019-05-19T09:30:00-05:00",
+            end: "2019-04-19T11:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Skug River Reservation Hike',
+            start: "2019-06-09T13:00:00-05:00",
+            end: "2019-06-09T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Tuesdays with AVIS',
+            start: "2019-06-04T09:30:00-05:00",
+            end: "2019-06-04T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'The AVIS Burns Reservation',
+            start: "2019-06-04T19:00:00-05:00",
+            end: "2019-06-04T20:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Beaver Hike',
+            start: "2019-06-04T09:30:00-05:00",
+            end: "2019-06-04T10:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'River Reservation Hike',
+            start: "2019-06-09T13:30:00-05:00",
+            end: "2019-06-09T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Native Wild Edibles with Russ Cohen',
+            start: "2019-06-13T19:00:00-05:00",
+            end: "2019-06-13T20:30:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Tuesdays with AVIS',
+            start: "2019-06-18T09:30:00-05:00",
+            end: "2019-06-18T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Rafton Reservation Hike',
+            start: "2019-06-23T13:00:00-05:00",
+            end: "2019-06-23T15:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Wild Edible Walk with Russ Cohen',
+            start: "2019-06-19T16:00:00-05:00",
+            end: "2019-06-19T18:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Tuesdays with AVIS',
+            start: "2019-07-16T09:30:00-05:00",
+            end: "2019-07-16T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Tuesdays with AVIS',
+            start: "2019-08-06T09:30:00-05:00",
+            end: "2019-08-06T12:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Five Reservation Bus Tour/Hike',
+            start: "2019-08-11T13:00:00-05:00",
+            end: "2019-08-11T16:00:00-05:00",
+            url: "/events.html"
+          },
+          {
+            title: 'Tuesdays with AVIS',
+            start: "2019-08-20T09:30:00-05:00",
+            end: "2019-08-20T12:00:00-05:00",
+            url: "/events.html"
+          }
+        ]
+      });
+
     });
 
-  });
+  </script>
+  <style>
+    body {
+      margin: 40px 10px;
+      padding: 0;
+      font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+      font-size: 14px;
+    }
 
-</script>
-<style>
-
-  body {
-    margin: 40px 10px;
-    padding: 0;
-    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-    font-size: 14px;
-  }
-
-  #calendar {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-</style>
+    #calendar {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  </style>
 
 </body>
