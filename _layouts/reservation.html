@@ -17,8 +17,9 @@
 
     <div class="sidebar">
       <p class="map">
-        <a href="https://andoverma.maps.arcgis.com/apps/webappviewer/index.html?id=e09aa89cf7a2437b8812542343816dfb" target="_blank">
-          <img src="assets/img/AVISmap.gif">
+        <a href="https://andoverma.maps.arcgis.com/apps/webappviewer/index.html?id=e09aa89cf7a2437b8812542343816dfb"
+          target="_blank">
+          <img src="/assets/img/AVISmap.gif">
           Interactive Map<br>
         </a>
         (provided by Andover Trails)
@@ -34,7 +35,7 @@
         <li><a href="/collins.html">Collins </a></li>
         <li><a href="/deer_jump.html">Deer Jump </a></li>
         <li><a>John Gardener </a></li>
-        <li><a href="/goldsmith.html">Goldsmith Woodlands</a></li>
+        <li><a href="/reservations/goldsmith.html">Goldsmith Woodlands</a></li>
         <li><a href="/annrawlings.html">Ann Rawlins Greene </a></li>
         <li><a href="/hammond.html">Hammond </a></li>
         <li><a href="/indianridge.html">Indian Ridge </a></li>
@@ -43,7 +44,7 @@
         <li><a href="/lupine.html">Lupine Road</a></li>
         <li><a>North Main St. Land</a></li>
         <li><a href="/purdon.html">Purdon</a></li>
-        <li><a href="/rafton.html">Harold R. Rafton</a></li>
+        <li><a href="/reservations/rafton.html">Harold R. Rafton</a></li>
         <li><a href="/sakowich.html">Sakowich</a></li>
         <li><a href="/sanborn.html">Sanborn</a></li>
         <li><a href="/shawsheenriver.html">Shawsheen River</a></li>
@@ -65,10 +66,10 @@
   <script src="/assets/js/jquery-2.1.4.min.js"></script>
   <script src="/assets/js/bootstrap.js"></script>
   <script>
-    $(document).ready(function() {
-      $("div.sidebar ul a[href]").each(function() {
+    $(document).ready(function () {
+      $("div.sidebar ul a[href]").each(function () {
         if (this.href == window.location.href) {
-            $(this).addClass("active");
+          $(this).addClass("active");
         }
       });
     });
