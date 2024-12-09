@@ -3,6 +3,20 @@ layout: reservation
 title: AVIS - Reservations
 ---
 
+<style>
+  /* Hide the snippet by default */
+  .mobile-only {
+    display: none;
+  }
+
+  /* Show the snippet for screens smaller than 768px (commonly used breakpoint for tablets/mobile) */
+  @media (max-width: 768px) {
+    .mobile-only {
+      display: block;
+    }
+  }
+</style>
+
 <h3>AVIS Reservations</h3>
 <hr>
 <p>Walk or ski the 30 miles of trails, boardwalks, and bridges that are open to the public on over 1100 acres of AVIS
@@ -10,6 +24,15 @@ title: AVIS - Reservations
 <p>For more details and maps of each reservation, select it on the interactive map or choose a reservation name to the
   left.</p>
 <p>Also available is <a href="/trailguide.html">The Andover Trails Guide.</a></p>
+<p class="mobile-only">For a list of all reservations, please click on the ☰ on your left.</p>
+<p class="map mobile-only">
+  <a href="https://andoverma.maps.arcgis.com/apps/webappviewer/index.html?id=e09aa89cf7a2437b8812542343816dfb"
+    target="_blank">
+    <img src="/assets/img/AVISmap.gif">
+    Interactive Map<br>
+  </a>
+  (provided by Andover Trails)
+</p>
 
 <h3>History of AVIS</h3>
 <hr>
