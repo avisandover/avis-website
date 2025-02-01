@@ -3,6 +3,98 @@ layout: default
 title: AVIS Events
 ---
 
+<script src='/avisEvents.js'></script>
+
+<script>
+  const dayName = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
+  const monthName = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+
+  function toClockRange(startHours,startMinutes,endHours,endMinutes) {
+      var clockTime = "";
+      var startSuffix = "";
+      var endSuffix = "";
+      if (isNaN(endHours)) {
+	  if (startHours < 12) {
+	      endSuffix = " AM";
+	  } else {
+	      endSuffix = " PM";
+	  }
+      } else if (startHours < 12 && endHours < 12) {
+	  endSuffix = " AM";
+      } else if (startHours < 12 && endHours >= 12) {
+	  startSuffix = " AM";
+	  endSuffix = " PM";
+      } else {
+	  endSuffix = " PM";
+      }
+	  
+      clockTime += (startHours > 12) ? (startHours-12) : (startHours);
+      clockTime += ':';
+      clockTime += (startMinutes < 10) ? ("0"+startMinutes.toString()) : (startMinutes.toString());
+      clockTime += startSuffix;
+      if (! isNaN(endHours)) {
+	  clockTime += ' - ';
+	  clockTime += (endHours > 12) ? (endHours-12) : (endHours);
+	  clockTime += ':';
+	  clockTime += (endMinutes < 10) ? ("0"+endMinutes.toString()) : (endMinutes.toString());
+      }
+      clockTime += endSuffix;
+      return clockTime;
+  }
+  
+  function toAvisDate(start,end) {
+      s = new Date(start)
+      e = new Date(end)
+      return dayName[s.getDay()]+'<br/>'+monthName[s.getMonth()]+' '+s.getDate()+', '+s.getFullYear()+'<br/>'+toClockRange(s.getHours(),s.getMinutes(),e.getHours(),e.getMinutes());
+  }
+  document.addEventListener('DOMContentLoaded',function() {
+
+      avisEvents.sort(function(a,b) {
+	  var aDate = new Date(a.start);
+	  var bDate = new Date(b.start);
+	  return aDate - bDate;
+      });
+
+      var currentMonth = -1;
+      
+      var futureRows = document.getElementById("futureEvents").tBodies[0];
+      for (event of avisEvents) {
+	  startDate = new Date(event.start)
+	  if (startDate > Date.now()) {
+	      if (startDate.getMonth() != currentMonth) {
+		  currentMonth = startDate.getMonth();
+		  var row = futureRows.insertRow();
+		  var cell0 = row.insertCell(0);
+		  cell0.colSpan = 3;
+		  cell0.innerHTML = '<h4 id="month-'+monthName[currentMonth]+'-'+startDate.getFullYear()+'">'+monthName[currentMonth]+'</h4>';
+	      }
+	      var row = futureRows.insertRow();
+	      var cell0 = row.insertCell(0);
+	      var cell1 = row.insertCell(1);
+	      var cell2 = row.insertCell(2);
+	      cell0.innerHTML = toAvisDate(event.start,event.end);
+	      cell1.innerHTML = event.location;
+	      cell2.innerHTML = '<b>' + (event.titleHtml || event.title) + '.</b>  ' + event.description;
+	  }
+      }
+      
+      var pastRows = document.getElementById("pastEvents").tBodies[0];
+      avisEvents.reverse()
+      for (event of avisEvents) {
+	  startDate = new Date(event.start)
+	  if (startDate < Date.now()) {
+	      var row = pastRows.insertRow();
+	      var cell0 = row.insertCell(0);
+	      var cell1 = row.insertCell(1);
+	      var cell2 = row.insertCell(2);
+	      cell0.innerHTML = toAvisDate(event.start,event.end);
+	      cell1.innerHTML = event.location;
+	      cell2.innerHTML = '<b>' + (event.titleHtml || event.title) + '.</b>  ' + event.description;
+	  }
+      }
+  });
+</script>
+  
 <div id="events" class="page">
 	<h3>AVIS 125th Year Celebration Videos from 2019</h3>
 
@@ -15,7 +107,7 @@ title: AVIS Events
 		allowfullscreen></iframe>
 	<h3>Upcoming Events</h3>
 	<hr>
-	<table class="table table-condensed avis-table">
+	<table id="futureEvents" class="table table-condensed avis-table">
 		<thead>
 			<tr>
 				<td>When</td>
@@ -23,52 +115,8 @@ title: AVIS Events
 				<td>What</td>
 			</tr>
 		</thead>
-
-		<tr>
-			<td>
-				Sunday<br/>February 2, 2025<br/>11:00 AM - 2:00 PM
-			</td>
-			<td>
-				Pomps Pond, 147 Abbot Street, Andover
-			</td>
-			<td>
-				<b>Andover Winterfest 2025: </b>Ice Fishing Derby, Guided Hikes, Hockey Target Competition, Wildlife
-				Demo and Ice Rescue Demo. Register <a
-					href="https://andoverma.myrec.com/info/activities/program_details.aspx?ProgramID=30471"
-					target="_blank">here</a>.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				Saturday<br/>February 6, 2025<br/>6:30 - 8:00 PM
-			</td>
-			<td>
-				Robb Center, 30 Whittier Court, Andover
-			</td>
-			<td>
-				<a href="/exhibit/2024-photo/index.html" target="_blank"><b>AVIS Photo Exhibit Opening Night: </b></a> The public is welcome to join us for our Opening Night
-				celebration presenting 33 winning images at the Robb Center.
-			</td>
-		</tr>
-
-		<tr>
-		  <td>
-		    Thursday<br/>February 13 2025<br/>10:00 AM-1:00 PM
-		  </td>
-		  <td>
-		    Goldsmith, Keck and Fosters Pond Reservations
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000bC742AE/act00010782" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-		
-		<tr>
-		  <td>
+		<tbody>
+        </tbody>
 		    Saturday<br/>February 22, 2025<br/>10:00 AM
 		  </td>
 		  <td>
@@ -81,1126 +129,6 @@ title: AVIS Events
 
 		<tr>
 		  <td>
-		    Thursday<br/>February 27, 2025<br/>10:00 AM-1:00 PM
-		  </td>
-		  <td>
-		    West Parish Meadow, Indian Ridge and Baker’s Meadow Reservations
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000bdgj2AA/act00010827" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-
-		<tr>
-		  <td>
-		    Thursday<br/>March 13, 2025<br/>10:00 AM-12:30 PM
-		  </td>
-		  <td>
-		    Bay Circuit Trail—Deer Jump and Harold Rafton Reservations
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000aeYP2AY/act00010637" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-
-		<tr>
-		  <td>
-		    Thursday<br/>March 27, 2025<br/>10:00 AM-12:30 PM
-		  </td>
-		  <td>
-		    Bay Circuit Trail—The Charles Ward Reservation
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000aerl2AA/act00010638" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-
-		<tr>
-		  <td>
-		    Saturday<br/>March 29, 2025<br/>8:30 - 11:00 AM
-		  </td>
-		  <td>
-		    Sign up for more information at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a>
-		  </td>
-		  <td>
-		    <b>Eco Team Invasive Plant identification and Removal Session</b>: Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.
-		  </td>
-		</tr>
-
-		<tr>
-		  <td>
-		    Thursday<br/>April 10, 2025<br/>10:00 AM-1:00 PM
-		  </td>
-		  <td>
-		    Bay Circuit Trail—Andover to Tewksbury Spur
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000bfKL2AY/act00010829" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-
-		<tr>
-			<td>
-				Tuesday<br/>April 22, 2025<br/>6:00 PM
-			</td>
-			<td>
-				Cormier Youth Center in Andover
-			</td>
-			<td>
-			  <b>The 2025 Annual Meeting of the Andover Village Improvement Society</b><br/>
-			  (6:00 p.m. - Cocktails/Dinner, 7:30 p.m. - Meeting/Speakers).<br/>
-			  The dinner portion of the event requires prepayment. Tickets are $60 each. (AVIS Wardens and Eco Team Volunteers may purchase a ticket for $30). The Meeting/Speakers portion of the event is open to all members free of charge. All attendees should register for the event  <a href="https://secure.lglforms.com/form_engine/s/bevJO9zrH6xZ19GAN7KjjQ" target="_blank">here</a>.
-			</td>
-		</tr>
-                        
-		<tr>
-		  <td>
-		    Thursday<br/>April 24, 2025<br/>10:00 AM-12:30 PM
-		  </td>
-		  <td>
-		    Along The Shawsheen River through The Shawsheen, Vale and Greene Reservations
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000afHZ2AY/act00010641" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-
-		<tr>
-		  <td>
-		    Thursday<br/>May 8, 2025<br/>10:00 AM-1:00 PM
-		  </td>
-		  <td>
-		    Bay Circuit Trail—Harold Parker State Forest to Skug River Reservation
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000dDBt2AM/act00010960" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-
-		<tr>
-
-		  <td>
-		    Thursday<br/>May 22, 2025<br/>10:00 AM-1:00 PM
-		  </td>
-		  <td>
-		    Bay Circuit Trail—Ward Hill to Skug River
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000dDAI2A2/act00010961" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-
-		<tr>
-		  <td>
-		    Thursday<br/>June 12, 2025<br/>10:00 AM-1:00 PM
-		  </td>
-		  <td>
-		    West Parish, Indian Ridge, Shawsheen and Vale Reservations to Pomps Pond
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000dDdJ2AU/act00010963" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-
-		<tr>
-		  <td>
-		    Thursday<br/>June 26, 2025<br/>10:00 AM-1:00 PM
-		  </td>
-		  <td>
-		    Den Rock Park and Bird Sanctuary
-		  </td>
-		  <td>
-		    <b>Try Exploring Andover (TEA) Time.</b> AVIS Trustee, Mark Kaluzny, is leading this series of 11
-		    hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes
-		    visit a combination of AVIS and surrounding organizations properties.
-		    <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000dDjl2AE/act00010964" target="_blank"><b>Register here.</b></a>
-		  </td>
-		</tr>
-		
-	</table>
-
-	<h3>Past Events</h3>
-
-	<table class="table table-condensed avis-table">
-		<thead>
-			<tr>
-				<td>When</td>
-				<td>Where</td>
-				<td>What</td>
-			</tr>
-		</thead>
-
-		<tr>
-			<td>
-				January 23, 2025 10:00 AM - 12:30 PM, Thursday
-			</td>
-			<td>
-				Andover, MA - TBA after registration
-			</td>
-			<td>
-				<b>Try Exploring Andover (Tea) Time: </b>Hike a 5 mile loop with an elevation gain of 600ft through a
-				series of AVIS and Andover Conservation Commission reservations that are home to deer, beaver, fox and
-				many bird species. Register <a
-					href="https://activities.outdoors.org/s/oc-activity/a5UUN000000afMP2AY/act00010642"
-					target="_blank">here</a>.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				November 30, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				November 16, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				November 3, 2024 1:00PM - 3:00PM Sunday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				November 2, 2024 10:30AM - noon Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Guided Nature &amp; History Hike: </b>
-				Andover Center for History & Culture, AVIS, and Andover Conservation Commission offer a guided nature
-				and history hike on Deer Jump and Retelle Reservations. Join us for a Fall discovery of birds, plants,
-				trees, ecology and those who settled here over the last 10,000 years, including the Pennacook Native
-				peoples. <br /><br />Pre-registration is required <a
-					href="https://andoverhistoryandculture.org/indigenous-history-walk"
-					target="_blank">https://andoverhistoryandculture.org/indigenous-history-walk</a>. Easy terrain ~
-				Limited to 35 people.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 5, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 13, 2024 1:00PM - 3:00PM Sunday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 26, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				August 31, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				September 8, 2024 1:00PM - 3:30PM Sunday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				September 21, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				July 27, 2024 9:00AM - 13:00PM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>World Conservation Day: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				August 3, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				August 17, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				July 20, 2024 9:00AM - 1:00PM Saturday
-			</td>
-			<td>
-				Lowell & Lawrence Railroad Reservation
-			</td>
-			<td>
-				<b>HIKE THE LOWELL LAWRENCE RAILROAD FROM HAGGETTS POND TO THE TEWKSBURY HOSPITAL: </b>
-				Join us on a 5 mile one way hike along the old Lowell & Lawrence Railroad which started operation in
-				1848. We will meet in Tewksbury and carpool to Haggett’s pond to start our hike.
-				We'll cover parts of the Bay Circuit Spur through Fishbrook Reservation, Haggett's Pond, Bellevue
-				Reservation, Pinnacle / Hospital Conservation Trail, past the Ogonowski Memorial Model Flying Field and
-				the Tewksbury State Hospital grounds and cemetery.<br /><br />
-
-				We'll discuss some of the history of the area as well as current challenges with conservation and
-				combatting invasive plant species. <a
-					href="https://activities.outdoors.org/search/index.cfm/action/details/id/151064"
-					target="_blank">Register
-					here</a>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				July 20, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				We will be celebrating World Conservation Day at the Andover Farmers' Market (AFM) South Church parking
-				lot @ 41 Central St, Andover, MA 01810. Come and join the celebration.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				July 7, 2024 1:00PM - 3:30PM Sunday
-			</td>
-			<td>
-				Andover Highlands Reservation
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				June 29, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				June 15, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				May 18, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				May 26, 2024 10:30AM - 2:30PM Sunday
-			</td>
-			<td>
-				Pomps Pond
-			</td>
-			<td>
-				<b>HIKE THE SHAWSHEEN RIVER AND POMP’S POND IN ANDOVER: </b>Come and enjoy a one-way riverside hike,
-				approx 5+ miles, along the beautiful Shawsheen River and Bay
-				Circuit Trail in Andover. We'll visit some of the recent habitat restoration sites and see local
-				efforts to fight invasive plant species as well as hear stories about the history of the properties.
-				Registration opens on May 15th:
-				<a href="https://activities.outdoors.org/search/index.cfm/action/details/id/149389" target="_blank">
-					https://activities.outdoors.org/search/index.cfm/action/details/id/149389</a>
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				June 1, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				April 13, 2024 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				Hammond Way
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list.<br /><br />
-
-				The weather looks to be a mix of clouds and sun in the morning. Sunset Rock was basically closed for
-				years due to the trails and entrance being impassible. A lot of work has been done in the last couple of
-				years by the wardens, various volunteer groups, and the Eco Team. The trails are very well-defined now.
-				It has an astounding amount of Burning Bush (Euonymus alatus). You'll learn to identify all stages of
-				this plant.<br /><br />
-
-				Park on Hammond Way. Please do not block any driveways. The entrance is down the dirt road, which is
-				actually someone's driveway. Please walk along the grass on the right, which is the AVIS easement.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				April 17, 2024 10:00AM - 1:00PM Wednesday
-			</td>
-			<td>
-				Cormier Youth Center
-			</td>
-			<td>
-				<b>Andover Volunteer Fair:</b>
-				Stop by our booth to find out about all the different volunteer opportunities with AVIS. See more about
-				the event <a
-					href="https://www.facebook.com/AndoverSeniorCenter/posts/pfbid02cL871iAzV64X4Na1a2xRBJ4WCc3Z5tL8WBMoVdwkdtYAp7msGVBajYUkpg4knMjbl/"
-					target="_blank">here</a>.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				Apr 27, 2024 10:00AM - 2:00PM Saturday
-			</td>
-			<td>
-				Hike the Bay Circuit Trail through West Parish Cemetery and Indian Ridge Reservation
-			</td>
-			<td>
-				Come join us for a ~4.5 mile loop hike across some of the most beautiful AVIS reservations. We will
-				meander through the West Parish Cemetery, around Baker's Meadow and return via Indian Ridge Reservation
-				and the West Parish Meadow.<br /><br />
-
-				This will include a stop at the Alice Buck Memorial for a short conversation about one of Andover's
-				first conservationists.<br /><br />
-
-				More than 145 species of birds, including herons, migrating ducks and nesting Canadian geese, have been
-				observed in these reservations. The wetlands also provide vital habitat for muskrat, mink and beaver.
-				<br /><br />
-
-				We plan to end our hike between 1:30 and 2:00PM, depending on the pace of the group.<br /><br />
-
-				Appropriate hiking footwear required (no sneakers please).<br /><br />
-
-				Rain, high winds and snowstorm will cancel the hike.<br /><br />
-
-				Sorry no dogs.<br /><br />
-
-				Confirmed participants will be e-mailed directions and reminders prior to the hike. Any questions
-				contact the leaders.<br /><br />
-				Registration is required. Registration opens Apr 17, 2024
-				Please visit:
-
-				<a target="_blank"
-					href="https://activities.outdoors.org/search/index.cfm/action/details/id/148875">https://activities.outdoors.org/search/index.cfm/action/details/id/148875</a>
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				April 27, 2024 8:30AM - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				May 5, 2024 1:00PM - 3:30PM Sunday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				April 9, 2024 6:00PM - 8:30PM Tuesday
-			</td>
-			<td>
-				Old Town Hall on Main Street in Andover
-			</td>
-			<td>
-				<b><a href="/annual/dinner.html">AVIS Annual Meeting</a>: </b>
-				The AVIS Annual Meeting will be the evening of Tuesday, April 9, 2024 at the Old Town Hall on Main
-				Street in Andover. The schedule of events is as follows:
-				<ul>
-					<li>Cocktails at 6:00 PM </li>
-					<li>Dinner at 6:30 PM</li>
-					<li>Business Meeting at 7:00-8:30 PM</li>
-				</ul>
-
-				The business Meeting will include the election of trustees, AVIS Financial Report, Land Management
-				Report, Land Stewardship Report, and a special projects update. This will be followed by guest speaker
-				Meg Holmes, who will discuss Traversing the Bay Circuit Trail in Andover.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				March 30, 2024 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco
-				Team email list. You’ll get up-to-date notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				Mar 23, 2024 10:00AM - 2:00PM Saturday
-			</td>
-			<td>
-				Hike the Shawsheen River &amp; Pomp's Pond in Andover
-			</td>
-			<td>
-				Come and enjoy a one-way riverside hike, approx 5+ miles, along the beautiful Shawsheen River and Bay
-				Circuit Trail in Andover.<br /><br />
-
-				We'll hike through several local reservations including:<br />
-				<ul>
-					<li>West Parish Meadow</li>
-					<li>Bakers Meadow</li>
-					<li>Indian Ridge Reservation</li>
-					<li>Shawsheen Reservation</li>
-					<li>Vale Reservation</li>
-					<li>Pomp's Pond</li>
-				</ul>
-
-				We'll visit some of the recent habitat restoration sites and see local efforts to fight invasive plant
-				species as well as hear stories about the history of the properties. <br /><br />
-
-				We will be hiking at an easy pace over roots and rocks with numerous ups and downs as we alternate being
-				directly on the shore of the river to the higher ground overlooking it. We plan to end our hike between
-				1:30 and 2:00PM, depending on the pace of the group. <br /><br />
-
-				Registration is required. Registration opens Mar 13, 2024 <br /><br />
-				Please visit:
-				<a
-					href="https://activities.outdoors.org/search/index.cfm/action/details/id/148650">https://activities.outdoors.org/search/index.cfm/action/details/id/148650</a>
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				Feb 17, 2024 10:00AM - 2:00PM Saturday
-			</td>
-			<td>
-				Hike the Bay Circuit Trail through Deer Jump AND Rafton Reservations
-			</td>
-			<td>
-				Come and enjoy a one-way hike along the Merrimack River and Fish Brook, approximately 5 miles. We will
-				leave our cars at the Tewksbury Pumping station and carpool to the starting point. We'll hike through
-				several smaller reservations and see extensive stands of Hemlock and immense white pines.<br /><br />
-
-				We will be hiking at an easy pace over roots and rocks with numerous ups and downs as we alternate being
-				directly on the shore of the river to the higher ground overlooking it. We plan to end our hike between
-				1:30 and 2:00PM, depending on the pace of the group.<br /><br />
-
-				Registration is required. Please visit:
-				<a target="_blank"
-					href="https://activities.outdoors.org/search/index.cfm/action/details/id/148379">https://activities.outdoors.org/search/index.cfm/action/details/id/148379</a>
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				November 4, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				November 18, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				November 25, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 8, 2023 8:30 - 11:00AM Sunday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 9, 2023 1:00p - 4:00p Monday
-			</td>
-			<td>
-				Meeting location will be shared with registration confirmation
-			</td>
-			<td>
-				<b>Guided Nature &amp; History Hike on Indigenous People's Day 2023: </b>
-				Andover Center for History & Culture, AVIS, and Andover Conservation Commission offer a guided nature
-				and history hike on Deer Jump and Retelle Reservations Join us for a Fall discovery of birds, plants,
-				trees, ecology and those who settled here over the last 8,000 years, including the Pennacook
-				Native peoples. Register here: https://andoverhistoryandculture.org/Public-Programs. Limited seats!
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 14, 2023, 10:00 am
-			</td>
-			<td>
-				Goldsmith trailhead at 941 S.Main Street, Andover
-			</td>
-			<td>
-				<b>Goldsmith Woodlands:</b> Come search with us for some of nature's treasures. The
-				walk will be held, weather permitting, on October 14th. We will walk the wide, gently sloping trails of
-				the reservation and then up the short hill to Bessie's Point, and on to Scout Hollow, if the group
-				wishes. Let's see what we might find along the way! October is a beautiful time to explore the woodland.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 14, 2023, 10am - 2:00 pm
-			</td>
-			<td>
-				Ballardvale
-			</td>
-			<td>
-				<b>Ballardvale Day:</b> Please visit the AVIS table in downtown Ballardvale, in the historic Ballardvale
-				neighborhood of Andover. Learn about the history of Andover, take a guided hike, or just hang out.
-
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 21, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				September 28, 2023, 10:00 am, Saturday
-			</td>
-			<td>
-				<a href="/shawsheenriver.html">Shawsheen River</a> &amp; <a href="/vale.html">Vale
-					Reservations</a>
-			</td>
-			<td>
-				<b>Trails and Sails hike:</b> Please join AVIS Trustee Denise Boucher in a hike through the Shawsheen
-				River and Vale Reservations. Park on Abbot Bridge Drive
-			</td>
-		</tr>
-		<tr>
-			<td>
-				September 30, 2023, Saturday
-			</td>
-			<td>
-				Downtown Andover
-			</td>
-			<td>
-				<b>Andover Day:</b> please visit the AVIS table at Andover Day in downtown Andover.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				September 30, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				October 1, 2023 4:00PM Sunday
-			</td>
-			<td>
-				<a href="/goldsmith.html">Bessie Goldsmith Reservation</a>
-			</td>
-			<td>
-				<b>AVIS Fall Hike: </b>
-				Starting at 4:00 with a stop at Scout Hollow for a campfire, hot cider and donuts at 5:30 on the way
-				back. Sunset is at 6:26 so it will start to get shadowy if not actually dark. We take the main trail
-				back to the parking lot as it gets dusky.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				September 24, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				September 15 to September 24, 2023
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Trails & Sails:</b> This is an annual event all over Essex County. AVIS and other Andover
-				organizations are participating in this celebration of culture, nature, and history by sponsoring a hike
-				and other activities throughout town. Learn more at trailsandsails.org.
-
-			</td>
-		</tr>
-		<tr>
-			<td>
-				September 2, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				August 26, 2023, 9am-1pm, Saturday:
-			</td>
-			<td>
-				South Church, Central Street, Andover
-			</td>
-			<td>
-				<b>Farmers Market; please visit the AVIS table at the Andover Farmers Market at South Church, Central
-					Street, Andover
-
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				August 6, 2023 8:30 - 11:00AM Sunday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				August 19, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-
-		<tr>
-			<td>
-				Jul 1, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				July 15, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				July 29, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				Email Lynn at HamletofLynn@gmail.com to be put on the Eco Team email list. You’ll get up-to-date
-				notifications about the location.
-			</td>
-		</tr>
-
-
-		<tr>
-			<td>
-				June 17, 2023 8:30 - 11:00AM Saturday
-			</td>
-			<td>
-				TBA
-			</td>
-			<td>
-				<b>Invasive Plant identification and Removal Session: </b>
-				The AVIS Eco-Team will be joining forces members of Grow Native Massachusetts for an invasive plant
-				identification and removal session. We will be tackling bittersweet and buckthorn using manual methods
-				such as hand pulling, weed wrenches, hand saws, and buckthorn baggies. Please email Lynn at
-				Hamletoflynn@gmail.com to be put on the mailing list for this and other Eco-Team
-				events. It helps us know if you will attend to plan for tool needs.
-			</td>
-		</tr>
-
-
-		<tr>
-			<td>
-				May 7, 2023 8:30AM Sunday
-			</td>
-			<td>
-				Shawsheen River Reservation, Central St between the RR bridge and the River
-			</td>
-			<td>
-				<b>Shawsheen River Reservation Garlic Mustard Pulling Event: </b>
-				Park on Abbott Bridge Drive and meet at the gated entrance to the Shawsheen River Reservation on Central
-				Street at 8:30 am. Two years ago there was enough of this invasive plant to fill 23 garbage bags---let's
-				see what we can remove this year! We welcome new and occasional volunteers. Please Email Eco-team Lead
-				(hamletoflynn@gmail.com) for more information and to let us know you're coming so that we can have tools
-				and gloves available for all.
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				May 6, 2023 9:30AM Saturday
-			</td>
-			<td>
-				Arch at West Parish Cemetery @ 129 Reservation Rd
-			</td>
-			<td>
-				<b>Three Reservation walk: </b>Come join us for a ~3.25 mile / ~2 hour hike across three of the most
-				beautiful AVIS reservations. We will meander through the West Parish Meadow, around Baker’s Meadow and
-				return via Indian Ridge Reservation. This will include a side trip to the Alice Buck Memorial for a
-				short talk about one of Andover’s first conservationists. More than 145 species of birds, including
-				herons, migrating ducks and nesting Canadian geese, have been observed in these reservations. The
-				wetlands also provide vital habitat for muskrat, mink and beaver.
-
-				Meet at the Arch at West Parish Cemetery @ 129 Reservation Rd, Andover, MA 01810 @ 9:20
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				April 18, 2023 10AM Tuesday
-			</td>
-			<td>
-				Shawsheen River Hike
-			</td>
-			<td>
-				Led by Trustee Mark Kaluzny, we will be hosting an easy fun hike at the Shawsheen River Reservation.
-				Let's walk along the Shawsheen River and see which critters are back
-				or waking up! Maybe we'll find Andover's famous "Octopus Tree"! Meet at the far end of the Ballardvale
-				Communter parking lot at 195 Andover St, Andover MA.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				April 17, 2023 10AM Monday
-			</td>
-			<td>
-				West Parish Scavenger Hunt
-			</td>
-			<td>
-				Cheryl McKeough, teacher and naturalist will be leading a fun scavenger hunts in the West Parish
-				Reservation.
-				We'll meet at the children's garden across from West Parish Church at 10:00AM, Monday, April 17, for an
-				easy one-hour scavenger hunt and walk in nature. No dogs, please. Children
-				must be accompanied by an adult.</a>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				April 11, 2023 6PM Tuesday
-			</td>
-			<td>
-				Annual Meeting
-			</td>
-			<td>
-				The Andover Village Improvement Society will hold its Annual Meeting at the Andover Town House on
-				Tuesday, April 11, 2023 beginning at 6 PM. Cocktails and self-serve appetizers start at 6 PM (cash bar)
-				followed by a
-				buffet style dinner at 6:30.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				April 2, 2023 2PM Sunday
-			</td>
-			<td>
-				Harold Rafton Hike
-			</td>
-			<td>
-				Come join us for a ~2.75 mile / ~2 hour hike at the largest of the AVIS reservations.
-				Maple, birch, oak, hickory and sassafras trees can be found in these serene woods. Tall white pines grow
-				along the ridges and hilltops and the ski loop trail passes through lovely hemlock groves. The forest
-				floor is carpeted with ferns, partridgeberry and teaberry. Deer, beaver, fox and numerous bird species
-				have been observed here.
-				Meet at the Andover Community Garden @ 265 High Plain Rd, Andover, MA 01810 at 2:00p.</a>
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				April 1, 2023 8:30AM Saturday
-			</td>
-			<td>
-				Weed Warriors Kickoff
-			</td>
-			<td>
-				Meet at West Parish Church's parking lot at 8:30a. We'll have a guided hike for newcomers, while
-				experianced team members get started on removing some glossy buckthorn and European honeysuckle.
-			</td>
-		</tr>
-
 	</table>
 
 	<h3>Photos from Past Events</h3>
@@ -1244,4 +172,19 @@ title: AVIS Events
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
+	<h3>Past Events</h3>
+
+	<table id="pastEvents" class="table table-condensed avis-table">
+		<thead>
+			<tr>
+				<td>When</td>
+				<td>Where</td>
+				<td>What</td>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+
+	</table>
+
 </div>
