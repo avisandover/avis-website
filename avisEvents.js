@@ -49,8 +49,8 @@ var avisEvents = [
 	title: 'Come energize at the Rockery!',
 	location: '<a href="turtle.html">Turtle Mound Reservation</a>',
 	description: 'Join Bill Kolbe, Warden of Follansbee Rockery, for a tour of this magnificent megalithic structure, otherwise known as the "Turtle Mound."  Immerse yourself in the energy and inspiration that emboldened a father and son to labor 20 years with only a capstan and an inclined plane to construct a magnificent sanctuary of natural beauty and tranquility.  The date of the tour also coincides with creator Paul B. Follansbee\'s birthday in 1811!  The Rockery is located on Lakeside Circle off Haggetts Pond Road.',
-	start: '2025-02-22T10:00', 
-   },
+	start: '2025-02-22T10:00',
+    },
     
     {
 	title: 'Try Exploring Andover (TEA) Time',
@@ -533,7 +533,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Deer Jump off Jillian Way',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-11-04T08:30',
 	end: '2023-11-04T11:00',
@@ -541,7 +541,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Goldsmith Woods Reservation',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-11-18T08:30',
 	end: '2023-11-18T11:00',
@@ -549,7 +549,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Goldsmith Woods Reservation',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-11-25T08:30',
 	end: '2023-11-25T11:00',
@@ -557,7 +557,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Sanborn',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-10-08T08:30',
 	end: '2023-10-08T11:00',
@@ -588,7 +588,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Deer Jump at Brundrett Ave',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-10-21T08:30',
 	end: '2023-10-21T11:00',
@@ -611,7 +611,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Lupine and Shawsheen River Reservation',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-09-30T08:30',
 	end: '2023-09-30T11:00',
@@ -626,7 +626,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Lupine and Shawsheen River Reservation',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-09-24T08:30',
 	end: '2023-09-24T11:00',
@@ -642,7 +642,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'West Parish Meadow',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-09-02T08:30',
 	end: '2023-09-02T11:00',
@@ -658,7 +658,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Deer Jump at Jillian Way',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-08-06T08:30',
 	end: '2023-08-06T11:00',
@@ -666,7 +666,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Amy Gordon Taft Reservation',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-08-19T08:30',
 	end: '2023-08-19T11:00',
@@ -674,23 +674,7 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
-	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
-	start: '2023-07-01T08:30',
-	end: '2023-07-01T11:00',
-    },
-
-    {
-	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
-	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
-	start: '2023-07-15T08:30',
-	end: '2023-07-15T11:00',
-    },
-
-    {
-	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Shawsheen River Reservation',
 	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 	start: '2023-07-29T08:30',
 	end: '2023-07-29T11:00',
@@ -698,12 +682,43 @@ var avisEvents = [
 
     {
 	title: 'Invasive Plant identification and Removal Session',
-	location: 'TBA',
+	location: 'Deer Jump at Brundrett Ave',
+	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+	start: '2023-07-15T08:30',
+	end: '2023-07-15T11:00',
+    },
+
+    {
+	title: 'Invasive Plant identification and Removal Session',
+	location: 'Sanborn',
+	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+	start: '2023-07-01T08:30',
+	end: '2023-07-01T11:00',
+    },
+
+    {
+	title: 'Invasive Plant identification and Removal Session',
+	location: 'Sanborn',
 	description: 'The AVIS Eco-Team will be joining forces members of Grow Native Massachusetts for an invasive plant identification and removal session. We will be tackling bittersweet and buckthorn using manual methods such as hand pulling, weed wrenches, hand saws, and buckthorn baggies. Please email Lynn at Hamletoflynn@gmail.com to be put on the mailing list for this and other Eco-Team events. It helps us know if you will attend to plan for tool needs.',
 	start: '2023-06-17T08:30',
 	end: '2023-06-17T11:00',
     },
 
+    {
+	title: 'Invasive Plant identification and Removal Session',
+	location: 'Lupine Reservation',
+	description: 'Park on Abbott Bridge Drive and meet at the gated entrance to the Shawsheen River Reservation on Central Street at 8:30 am. Two years ago there was enough of this invasive plant to fill 23 garbage bags---let\'s see what we can remove this year! We welcome new and occasional volunteers. Please Email Eco-team Lead	(hamletoflynn@gmail.com) for more information and to let us know you\'re coming so that we can have tools and gloves available for all.',
+	start: '2023-06-03T08:30',
+	end: '2023-06-03T11:00',
+    },
+
+    {
+	title: 'Invasive Plant identification and Removal Session',
+	location: 'Lupine Reservation',
+	description: 'Park on Abbott Bridge Drive and meet at the gated entrance to the Shawsheen River Reservation on Central Street at 8:30 am. Two years ago there was enough of this invasive plant to fill 23 garbage bags---let\'s see what we can remove this year! We welcome new and occasional volunteers. Please Email Eco-team Lead	(hamletoflynn@gmail.com) for more information and to let us know you\'re coming so that we can have tools and gloves available for all.',
+	start: '2023-05-20T08:30',
+	end: '2023-05-20T11:00',
+    },
 
     {
 	title: 'Shawsheen River Reservation Garlic Mustard Pulling Event',
@@ -721,6 +736,14 @@ var avisEvents = [
     },
 
     {
+	title: 'Invasive Plant identification and Removal Session',
+	location: 'Richard J. Bonier Reservation',
+	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+	start: '2023-04-29T08:30',
+	end: '2023-04-29T11:00',
+    },
+
+    {
 	title: 'Shawsheen River Hike',
 	location: 'Shawsheen Reservation',
 	description: 'Led by Trustee Mark Kaluzny, we will be hosting an easy fun hike at the Shawsheen River Reservation. Let\'s walk along the Shawsheen River and see which critters are back or waking up! Maybe we\'ll find Andover\'s famous "Octopus Tree"! Meet at the far end of the Ballardvale Communter parking lot at 195 Andover St, Andover MA.',
@@ -732,6 +755,14 @@ var avisEvents = [
 	location: 'West Parish Church',
 	description: 'Cheryl McKeough, teacher and naturalist will be leading a fun scavenger hunts in the West Parish Reservation. We\'ll meet at the children\'s garden across from West Parish Church at 10:00AM, Monday, April 17, for an easy one-hour scavenger hunt and walk in nature. No dogs, please. Children must be accompanied by an adult.',
 	start: '2023-04-17T10:00',
+    },
+
+    {
+	title: 'Invasive Plant identification and Removal Session',
+	location: 'Deer Jump at Jillian Way',
+	description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+	start: '2023-04-15T08:30',
+	end: '2023-04-15T11:00',
     },
 
     {
@@ -750,10 +781,10 @@ var avisEvents = [
 
     {
 	title: 'Weed Warriors Kickoff',
-	location: 'West Parish Church',
+	location: 'West Parish Meadow',
 	description: 'Meet at West Parish Church\'s parking lot at 8:30a. We\'ll have a guided hike for newcomers, while experianced team members get started on removing some glossy buckthorn and European honeysuckle.',
-	start: '2023-04-01T08:30',
-	end: '2023-04-01T11:00',
+	start: '2023-04-02T13:30',
+	end: '2023-04-02T16:00',
     },
 
 ]
