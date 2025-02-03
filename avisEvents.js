@@ -33,8 +33,8 @@ var avisEvents = [
 	title: 'Andover Winterfest 2025',
 	location: 'Pomps Pond, 147 Abbot Street, Andover',
 	description: 'Ice Fishing Derby, Guided Hikes, Hockey Target Competition, Wildlife Demo and Ice Rescue Demo. Register <a href="https://andoverma.myrec.com/info/activities/program_details.aspx?ProgramID=30471" target="_blank">here</a>.',
-	start: '2025-02-05T11:00',
-	end: '2025-02-05T14:00',
+	start: '2025-02-02T11:00',
+	end: '2025-02-02T14:00',
     },
 
     {
