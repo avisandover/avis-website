@@ -20,14 +20,14 @@ var avisEvents = [
 		end: '2025-01-23T12:30',
 	},
 
-	// {
-	// title: 'AVIS Photo Exhibit Opening Night',
-	// titleHtml: '<a href="/exhibit/2024-photo/index.html" target="_blank">AVIS Photo Exhibit Opening Night</a>',
-	// location: 'Robb Center, 30 Whittier Court, Andover',
-	// description: 'The public is welcome to join us for our Opening Night celebration presenting 33 winning images at the Robb Center.',
-	// start: '2025-02-06T18:30',
-	// end: '2025-02-06T20:00',
-	// },
+	{
+	title: 'AVIS Photo Exhibit Opening Celebration and Reception',
+	titleHtml: '<a href="/exhibit/2024-photo/index.html" target="_blank">AVIS Photo Exhibit Opening Celebration and Reception</a>',
+	location: 'Robb Center, 30 Whittier Court, Andover',
+	description: 'The public is welcome to join us for our Opening Night celebration presenting 33 winning images at the Robb Center.',
+	start: '2025-03-06T18:30',
+	end: '2025-03-06T20:00',
+	},
 
 	{
 		title: 'Andover Winterfest 2025',
