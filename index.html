@@ -2,6 +2,23 @@
 layout: default
 title: AVIS - Homepage
 ---
+<script src="/assets/js/jquery-2.1.4.min.js"></script>
+<script>
+  // Set the height on all carousel items to be the same, so the carousel doesn't change height as it rotates through.
+  function normalizeSlideHeights() {
+      $('.carousel').each(function() {
+	  var items = $('.carousel-body', this);
+	  items.css('min-height', 0);
+	  var maxHeight = Math.max.apply(null, items.map(function() {
+	      return $(this).outerHeight();
+	  }).get());
+	  items.css('min-height', maxHeight + 'px');
+	  items.css('max-height', maxHeight + 'px');
+      });
+  }
+
+$(window).on('load resize orientationchange', normalizeSlideHeights);
+</script>
 
 <div id="homepage">
   <div class="container">
@@ -20,10 +37,10 @@ title: AVIS - Homepage
 
         <div class="item active">
           <header>
-            <div>
+            <div class="carousel-body">
               <h1>Photo Competition Gallery Exhibit</h1>
 
-              <p>The public is welcome to join us on Thursday March 6 from 6:30-8:00pm for our Opening Celebration
+              <p style="font-size:16px">The public is welcome to join us on Thursday March 6 from 6:30-8:00pm for our Opening Celebration
                 and Reception presenting 33 winning images from our 2024 Photo Competition. The Exhibit is located at the
                 Robb Center, 30 Whittier Court in Andover. The Exhibit will run from February 4 through March
                 28.<br /><br />
@@ -36,10 +53,10 @@ title: AVIS - Homepage
 
         <div class="item">
           <header>
-            <div>
+            <div class="carousel-body">
               <h1>About</h1>
 
-              <p>Founded in 1894 as The Andover Village Improvement Society, AVIS is one of the oldest land
+              <p style="font-size:16px">Founded in 1894 as The Andover Village Improvement Society, AVIS is one of the oldest land
                 conservation organizations in the country. AVIS manages more than 30 reservations comprising
                 more than 1,200 acres in the Town of Andover. It relies on a corps of volunteers to lead the
                 organization and to provide maintenance of its recreational trails and stewardship for the
@@ -52,10 +69,10 @@ title: AVIS - Homepage
 
         <div class="item">
           <header>
-            <div>
+            <div class="carousel-body">
               <h1>Confronting Racism</h1>
 
-              <p>Like many of you, we are appalled by the injustices and acts of violence against
+              <p style="font-size:16px">Like many of you, we are appalled by the injustices and acts of violence against
                 racially marginalized groups. The events that have unfolded in the past weeks and
                 months shake us all. The murders of unarmed black people over decades, and the
                 recent protests (that have followed), illustrate the historic, systemic racism and
@@ -69,10 +86,10 @@ title: AVIS - Homepage
 
         <div class="item">
           <header>
-            <div>
+            <div class="carousel-body">
               <h1>Our Mission</h1>
 
-              <p>AVIS is a non-profit land trust dedicated to acquiring open space in Andover, Massachusetts and
+              <p style="font-size:16px">AVIS is a non-profit land trust dedicated to acquiring open space in Andover, Massachusetts and
                 conserving it into perpetuity.
                 AVIS manages its reservations to protect native habitat and provide opportunities for the public to
                 experience, enjoy and learn
@@ -90,10 +107,10 @@ title: AVIS - Homepage
 
         <div class="item">
           <header>
-            <div>
+            <div class="carousel-body">
               <h1>AVIS Land Acknowledgement </h1>
 
-              <p>We acknowledge that AVIS reservations are located on the ancestral land of the Pennacook, Pawtucket and
+              <p style="font-size:16px">We acknowledge that AVIS reservations are located on the ancestral land of the Pennacook, Pawtucket and
                 other Indigenous people, which was their home for more than 10,000 years. We honor the land we manage
                 and all the Indigenous people who were here before, are here now, and will be here in the future.
                 We recognize that we are all guests on this land and are mindful of our impact.
@@ -128,14 +145,18 @@ title: AVIS - Homepage
           <h2>Upcoming Events</h2>
 
           <p>
-            <a href="/events.html" target="_blank">Feb 22, 2025</a> - Tour the Rockery<br />
             <a href="/events.html" target="_blank">Feb 27, 2025</a> - Try Exploring Andover (TEA) Time. West Parish
             Meadow, Indian Ridge and Baker’s Meadow Reservations.<br />
             <a href="/exhibit/2024-photo/index.html" target="_blank">March 6, 2025</a> - AVIS Photo Exhibit Opening Celebration and Reception @ <a
               href="https://www.google.com/maps/place/30+Whittier+Ct,+Andover,+MA+01810/@42.6549387,-71.1356893,17z/data=!3m1!4b1!4m6!3m5!1s0x89e3088e7c394071:0x2fe023bf76c696ad!8m2!3d42.6549387!4d-71.1356893!16s%2Fg%2F11gg6jzzd1!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D">Robb
               Center</a><br />
-            <a href="/events.html" target="_blank">Mar 29, 2025</a> - The Eco Team season starts<br />
-            <a href="/events.html" target="_blank">Apr 22, 2025</a> - 2025 Annual Meeting of AVIS<br /><br />
+            <a href="/events.html" target="_blank">Mar 29, 2025</a> - The Eco Team season starts<br /><br />
+	    <h4><a href="https://secure.lglforms.com/form_engine/s/bevJO9zrH6xZ19GAN7KjjQ" target="_blank">AVIS Annual Meeting on Tuesday, April 22</a></h4>
+	  <p>The 2025 Annnual Meeting of the Andover Village Improvement Society will take place on Tuesday, April 22 at the Cormier Youth Center in Andover.  6:00 p.m. - Cocktails/Dinner, 7:30 p.m. - Meeting/Speakers.<br/>The dinner portion of the event requires prepayment. Tickets are $60 each. (AVIS Wardens and Eco Team Volunteers may purchase a ticket for $30). The Meeting/Speakers portion of the event is open to all members free of charge.<br/>
+	    <a href="https://secure.lglforms.com/form_engine/s/bevJO9zrH6xZ19GAN7KjjQ" target="_blank"><b>All attendees should register for the event here</b></a>.<br/><br/>
+	    </p>
+	    
+	    
           </p>
 
           <p>
@@ -168,30 +189,33 @@ title: AVIS - Homepage
 
           <br />
 
-          <h2>Upcoming AVIS walks</h2>
-          <p>
-            AVIS Trustee, Mark Kaluzny, a certified AMC hike leader, will be leading hikes on the first Saturday of the
-            month, February through June. Please check back to find out times and meeting locations.
-          </p>
 
-          <br />
-
-          <h2>Recent Blog Entries</h2>
-          <p>
-            <a href="https://blog.avisandover.org/2024/01/how-can-i-hide-my-own-geocache/">
-              How Can I Hide My Own Geocache?
-            </a>
-          </p>
-          <p><a href="https://blog.avisandover.org/2023/05/extraordinary-endeavors-of-the-eco-team/">Extraordinary
-              Endeavors of the Eco-team!</a></p>
-          <p><a href="https://blog.avisandover.org/2023/03/boy-scouts-building-boardwalks/">Boy Scouts Building
-              Boardwalks!</a></p>
-          <p><a href="https://blog.avisandover.org/2023/02/promote-pollinators-minimize-mosquitoes/">Promote
-              Pollinators! Minimize Mosquitoes!</a></p>
-          <p><a href="https://blog.avisandover.org/2022/02/winter-activities/">Winter Activities</a></p>
-          <p><a href="https://blog.avisandover.org/2022/01/white-squirrels-of-ballardvale/">White Squirrels of
-              Ballardvale</a></p>
-          <p><a href="https://blog.avisandover.org/2022/01/the-mysterious-oak/">Mysterious Oak</a></p>
+          <h2>Blog Entries</h2>
+	  <p>
+	    <a href="https://blog.avisandover.org/2024/12/goldsmith-woodlands-all-persons-trail-project/">
+	      Goldsmith Woodlands All Persons Trail Project
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://blog.avisandover.org/2025/01/avis-eco-team/">
+	      AVIS Eco Team
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://blog.avisandover.org/2024/05/reflections-on-a-rewarding-and-fun-filled-year/">
+	      Reflections on a Rewarding and Fun-filled Year
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://blog.avisandover.org/2024/05/garlic-mustard-101-what-it-is-and-what-to-do-with-it/">
+	      Garlic Mustard 101: What it is and what to do with it
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://blog.avisandover.org/2024/04/my-goldilocks-moment-while-searching-for-a-trail/">
+	      My Goldilocks Moment While Searching for a Trail
+	    </a>
+	  </p>
           <div>
             <a href="https://blog.avisandover.org/" class="btn btn-primary">Read More</a>
           </div>
@@ -212,9 +236,8 @@ title: AVIS - Homepage
           <h3>Frogs at Vale Reservation</h3>
           <p>
             Janet Clarke, AVIS Trustee, has been monitoring the frog population at Vale Reservation for many years. She
-            recorded these videos of the frogs in March 2020. Listen to them from <a href="/vale.html">here</a> or go to
-            the Vale
-            Reservation page to see the videos.
+            recorded these videos of the frogs in March 2020. Watch the video below and go to the <a href="/vale.html">Vale
+            Reservation page</a> for more videos.
           </p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/dvimkUe_KVM?si=_gZNIHzJaQKDlAlW"
             title="YouTube video player" frameborder="0"
@@ -287,19 +310,18 @@ title: AVIS - Homepage
     <section class="row gray-row">
       <div class="col-xs-12">
         <div>
-          <h2>Recent News</h2>
+          <h2>Student created videos</h2>
           <p>Students at Andover High School in conjunction with Andover TV have created short videos on three AVIS
             Reservations. See the reservations like you have not seen them before:</p>
           <h4>Baker's Meadow Reservation (<a href="https://www.youtube.com/watch?v=7KtvVe5RipA"
-              target=_blank">Video</a>)</h4>
+              "target=_blank">Video</a>)</h4>
           <h4>Goldsmith Woodlands Reservation (<a href="https://www.youtube.com/watch?v=iIRXyUV-EKc"
-              target=_blank">Video</a>)</h4>
+              "target=_blank">Video</a>)</h4>
           <h4>Shawsheen River Reservation (<a href="https://www.youtube.com/watch?v=aqMcRdrL6DA"
-              target=_blank">Video</a>)</h4>
-          <h4>AVIS Land Acknowledgement (<a href="/landack.html" target=_blank">Read more</a>)</h4>
+              "target=_blank">Video</a>)</h4>
           <p>
             <br />
-          <h4>Find out how to control ticks in your yard.</h4> See the manual available on the Town of Andover website
+          <h2>Tick Management</h2> See the manual available on the Town of Andover website
           at this <a href="http://andoverma.gov/DocumentCenter/View/145/Tick-Management-Handbook-PDF">link</a>.
           </p>
         </div>
