@@ -103,7 +103,7 @@ var avisEvents = [
 	{
 		title: 'The 2025 Annual Meeting of the Andover Village Improvement Society',
 		location: 'Cormier Youth Center in Andover',
-		description: '(6:00 p.m. - Cocktails/Dinner, 7:30 p.m. - Meeting/Speakers).<br/>The dinner portion of the event requires prepayment. Tickets are $60 each. (AVIS Wardens and Eco Team Volunteers may purchase a ticket for $30). The Meeting/Speakers portion of the event is open to all members free of charge. All attendees should register for the event  <a href="https:secure.lglforms.com/form_engine/s/bevJO9zrH6xZ19GAN7KjjQ" target="_blank">here</a>.',
+		description: '(6:00 p.m. - Cocktails/Dinner, 7:30 p.m. - Meeting/Speakers).<br/>The dinner portion of the event requires prepayment. Tickets are $60 each. (AVIS Wardens and Eco Team Volunteers may purchase a ticket for $30). The Meeting/Speakers portion of the event is open to all members free of charge. All attendees should register for the event  <a href="https://secure.lglforms.com/form_engine/s/bevJO9zrH6xZ19GAN7KjjQ" target="_blank">here</a>.',
 		start: '2025-04-22T18:00',
 	},
 
