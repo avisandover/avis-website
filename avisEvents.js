@@ -89,7 +89,7 @@ var avisEvents = [
 		location: 'Bay Circuit Trail—Andover to Tewksbury Spur',
 		description: 'AVIS Trustee, Mark Kaluzny, is leading this series of 11 hikes for the AMC. Held on the 2nd and 4th Thursday of each month through June, the hikes visit a combination of AVIS and surrounding organizations properties. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000000bfKL2AY/act00010829" target="_blank"><b>Register here.</b></a>',
 		start: '2025-04-10T10:00',
-		end: '2025-04-10T11:30',
+		end: '2025-04-10T13:00',
 	},
 
 	{
