@@ -15,17 +15,17 @@ title: AVIS Events
       var endSuffix = "";
       if (isNaN(endHours)) {
 	  if (startHours < 12) {
-	      endSuffix = " AM";
+	      endSuffix = " am";
 	  } else {
-	      endSuffix = " PM";
+	      endSuffix = " pm";
 	  }
       } else if (startHours < 12 && endHours < 12) {
-	  endSuffix = " AM";
+	  endSuffix = " am";
       } else if (startHours < 12 && endHours >= 12) {
-	  startSuffix = " AM";
-	  endSuffix = " PM";
+	  startSuffix = " am";
+	  endSuffix = " pm";
       } else {
-	  endSuffix = " PM";
+	  endSuffix = " pm";
       }
 	  
       clockTime += (startHours > 12) ? (startHours-12) : (startHours);

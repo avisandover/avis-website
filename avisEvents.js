@@ -10,7 +10,23 @@
 
 var avisEvents = [
 
+    {
+	title: 'AVIS tent at the Andover Farmer\'s Market',
+	titleHtml: 'AVIS tent at the Andover Farmer\'s Market <a href="https://andoverfarmersmarket.com">andoverfarmersmarket.com</a>',
+	location: '34 Bartlet Street Andover between Town Offices and The Park.',
+	description: "Stop by the AVIS tent at the Andover Farmer’s Market to learn about Eco Team, ongoing hikes, Goldsmith Woodlands APT updates, and ways students can fulfill community service requirements.",
+	start: '2025-09-06T09:00',
+	end:   '2025-09-06T13:00',
+    },
 
+    {
+	title: 'AVIS tent at the Andover Farmer\'s Market',
+	titleHtml: 'AVIS tent at the Andover Farmer\'s Market <a href="https://andoverfarmersmarket.com">andoverfarmersmarket.com</a>',
+	location: '34 Bartlet Street Andover between Town Offices and The Park.',
+	description: "Stop by the AVIS tent at the Andover Farmer’s Market to learn about Eco Team, ongoing hikes, Goldsmith Woodlands APT updates, and ways students can fulfill community service requirements.",
+	start: '2025-07-26T09:00',
+	end:   '2025-07-26T13:00',
+    },
 
 	{
 		title: 'Try Exploring Andover (TEA) Time',
