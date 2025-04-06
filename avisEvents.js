@@ -11,6 +11,13 @@
 var avisEvents = [
 
     {
+	title: 'Mystic Link Trail Talk',
+	location: 'Andover Library',
+	description: 'Come and learn about the Mystic Link Trail, an exciting new walking & biking trail connecting Andover to Boston.<br/>Learn about a new recreational trail project called the <a href="https://mysticlinktrail.org" target="_blank">Mystic Link Trail</a> which originates in Andover and connects 10+ communities to Boston. This trail is a spur of the 230 mile Bay Circuit Trail that arcs around the city of Boston from Newburyport to Duxbury. Andover trail and conservation groups will also provide an overview of local trails and conservation efforts and help you get to the Mystic Link!<br/>Register on the <a href="https://mhl.libnet.info/event/13417792" target="_blank">Memorial Hall Library website</a>.',
+	start: '2025-05-31T10:00',
+	end: '2025-05-31T11:30',
+    },
+    {
 	title: 'AVIS tent at the Andover Farmer\'s Market',
 	titleHtml: 'AVIS tent at the Andover Farmer\'s Market <a href="https://andoverfarmersmarket.com">andoverfarmersmarket.com</a>',
 	location: '34 Bartlet Street Andover between Town Offices and The Park.',
