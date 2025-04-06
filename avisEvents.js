@@ -116,14 +116,6 @@ var avisEvents = [
 	},
 
 	{
-		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
-		start: '2025-04-12T08:30',
-		end: '2025-04-12T11:00',
-	},
-
-	{
 		title: 'The 2025 Annual Meeting of the Andover Village Improvement Society',
 		location: 'Cormier Youth Center in Andover',
 		description: '(6:00 p.m. - Welcome**/Dinner, 7:30 p.m. - Meeting/Speakers).<br/>The dinner portion of the event requires prepayment. Tickets are $60 each. (AVIS Wardens and Eco Team Volunteers may purchase a ticket for $30). The Meeting/Speakers portion of the event is open to all members free of charge. All attendees should register for the event  <a href="https://secure.lglforms.com/form_engine/s/bevJO9zrH6xZ19GAN7KjjQ" target="_blank">here</a>.<br/><b>**Note that the Welcome hour cash bar will feature <u>non-alcoholic beverages only</u></b><br/>',
