@@ -6,12 +6,10 @@ title: AVIS - Homepage
 <script>
   // Set the height on all carousel items to be the same, so the carousel doesn't change height as it rotates through.
   function normalizeSlideHeights() {
+      $('.carousel').carousel(0);
       $('.carousel').each(function() {
 	  var items = $('.carousel-body', this);
-	  items.css('min-height', 0);
-	  var maxHeight = Math.max.apply(null, items.map(function() {
-	      return $(this).outerHeight();
-	  }).get());
+	  var maxHeight = items.outerHeight()
 	  items.css('min-height', maxHeight + 'px');
 	  items.css('max-height', maxHeight + 'px');
       });
@@ -35,20 +33,8 @@ $(window).on('load resize orientationchange', normalizeSlideHeights);
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
 
+	<!-- Make sure the first carousel-body is the largest by adding <br/> -->
         <div class="item active">
-          <header>
-            <div class="carousel-body">
-              <h1>Photo Competition Gallery Exhibit</h1>
-
-              <p style="font-size:16px">The opening celebration and reception for the 2024 Photo Competition was a great success! The 33 winning images are on view at the Robb Center, 30 Whittier Court in Andover, through March 28.<br /><br />
-                See
-                <a href="/competitions/2024-photo/winners.html">winners and their photos here</a>.
-              </p>
-            </div>
-          </header>
-        </div>
-
-        <div class="item">
           <header>
             <div class="carousel-body">
               <h1>About</h1>
@@ -59,6 +45,23 @@ $(window).on('load resize orientationchange', normalizeSlideHeights);
                 organization and to provide maintenance of its recreational trails and stewardship for the
                 land and its wildlife habitat. Donations from community members and grant sources provide the
                 funds to acquire, protect and manage its reservations.
+		<br/>
+		<br/>
+              </p>
+            </div>
+          </header>
+        </div>
+
+        <div class="item">
+          <header>
+            <div class="carousel-body">
+              <h1>Photo Competition Gallery Exhibit</h1>
+
+              <p style="font-size:16px">
+		The winning images will be on view at Memorial Hall Library, 2 North Main Street in Andover, from June 1-30
+		<br /><br />
+                See
+                <a href="/competitions/2024-photo/winners.html">winners and their photos here</a>.
               </p>
             </div>
           </header>
@@ -149,7 +152,13 @@ $(window).on('load resize orientationchange', normalizeSlideHeights);
 
 	  <p>
             <a href="/events.html" target="_blank">Saturday, April 12, 2025</a>
-	    Eco Team Invasive Plant identification and Removal Session
+	    Eco Team Invasive Plant identification and Removal Session (cancelled)
+	    <br />
+	  </p>
+	    
+	  <p>
+            <a href="/events.html" target="_blank">Tuesday, April 22, 2025</a>
+	    AVIS Annual Meeting
 	    <br />
 	  </p>
 	    
