@@ -11,6 +11,27 @@
 var avisEvents = [
 
     {
+	title: '2025 Hike for Change, Day 16',
+	location: '<a href="https://www.thedirtyhandsproject.org/event-details/day-16-lowell-memorial-auditorium-bald-hill-andover-2">Register</a>',
+	description: 'Dirty Hands Project is a non-profit organization sponsoring the 2025 Hike for a Change. This 200-mile walk will occur throughout May (Mental Health Awareness Month) and follows the Bay Circuit Trail from Kingston, MA, to Newburyport, MA. Dirty Hands Project will be hiking the Andover sections of the BCT on May 19-21. Please join us as we hike through some of the amazing AVIS and Andover properties. Day 16: Lowell Memorial Auditorium -> Bald Hill, Andover.  Register <a href="https://www.thedirtyhandsproject.org/event-details/day-16-lowell-memorial-auditorium-bald-hill-andover-2">here</a>.',
+        start: '2025-05-19T10:00',
+        end: '2025-05-19T14:00',
+    },
+    {
+	title: '2025 Hike for Change, Day 17',
+	location: '<a href="https://www.thedirtyhandsproject.org/event-details/day-17-bald-hill-andover-ward-reservation-andover-2">Register</a>',
+	description: 'Dirty Hands Project is a non-profit organization sponsoring the 2025 Hike for a Change. This 200-mile walk will occur throughout May (Mental Health Awareness Month) and follows the Bay Circuit Trail from Kingston, MA, to Newburyport, MA. Dirty Hands Project will be hiking the Andover sections of the BCT on May 19-21. Please join us as we hike through some of the amazing AVIS and Andover properties. Day 17: Bald Hill, Andover ->Ward Reservation, Andover.  Register <a href="https://www.thedirtyhandsproject.org/event-details/day-17-bald-hill-andover-ward-reservation-andover-2">here</a>.',
+        start: '2025-05-20T10:00',
+        end: '2025-05-20T14:00',
+    },
+    {
+	title: '2025 Hike for Change, Day 18',
+	location: '<a href="https://www.thedirtyhandsproject.org/event-details/day-18-ward-reservation-andover-to-boxford-state-forest-north-andover-2">Register</a>',
+	description: 'Dirty Hands Project is a non-profit organization sponsoring the 2025 Hike for a Change. This 200-mile walk will occur throughout May (Mental Health Awareness Month) and follows the Bay Circuit Trail from Kingston, MA, to Newburyport, MA. Dirty Hands Project will be hiking the Andover sections of the BCT on May 19-21. Please join us as we hike through some of the amazing AVIS and Andover properties. Day 18: Ward Reservation, Andover to Boxford State Forest, North Andover.  Register <a href="https://www.thedirtyhandsproject.org/event-details/day-18-ward-reservation-andover-to-boxford-state-forest-north-andover-2">here</a>.',
+        start: '2025-05-21T10:00',
+        end: '2025-05-21T14:00',
+    },
+    {
 	title: 'Mystic Link Trail Talk',
 	location: 'Andover Library',
 	description: 'Come and learn about the Mystic Link Trail, an exciting new walking & biking trail connecting Andover to Boston.<br/>Learn about a new recreational trail project called the <a href="https://mysticlinktrail.org" target="_blank">Mystic Link Trail</a> which originates in Andover and connects 10+ communities to Boston. This trail is a spur of the 230 mile Bay Circuit Trail that arcs around the city of Boston from Newburyport to Duxbury. Andover trail and conservation groups will also provide an overview of local trails and conservation efforts and help you get to the Mystic Link!<br/>Register on the <a href="https://mhl.libnet.info/event/13417792" target="_blank">Memorial Hall Library website</a>.',
