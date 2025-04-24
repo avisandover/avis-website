@@ -139,7 +139,7 @@ var avisEvents = [
 	{
 		title: 'The 2025 Annual Meeting of the Andover Village Improvement Society',
 		location: 'Cormier Youth Center in Andover',
-		description: '(6:00 p.m. - Welcome**/Dinner, 7:30 p.m. - Meeting/Speakers).<br/>The dinner portion of the event requires prepayment. Tickets are $60 each. (AVIS Wardens and Eco Team Volunteers may purchase a ticket for $30). The Meeting/Speakers portion of the event is open to all members free of charge. All attendees should register for the event  <a href="https://secure.lglforms.com/form_engine/s/bevJO9zrH6xZ19GAN7KjjQ" target="_blank">here</a>.<br/><b>**Note that the Welcome hour cash bar will feature <u>non-alcoholic beverages only</u></b><br/>',
+		description: '(6:00 p.m. - Welcome**/Dinner, 7:30 p.m. - Meeting/Speakers).<br/>Dr. Alex Maxwell, Fuss & O’Neil, senior environmental planner, and Ben Meade, the Town of Andover’s Conservation Commission’s Agent gave a talk on <i>Climate Ready Shawsheen</i>. <a href="https://imd0mxanj2.execute-api.us-west-2.amazonaws.com/ssr/watch/680a3c69559dded8edb81b07">Video of the meeting is here</a>.<br/>The dinner portion of the event requires prepayment. Tickets are $60 each. (AVIS Wardens and Eco Team Volunteers may purchase a ticket for $30). The Meeting/Speakers portion of the event is open to all members free of charge. All attendees should register for the event  <a href="https://secure.lglforms.com/form_engine/s/bevJO9zrH6xZ19GAN7KjjQ" target="_blank">here</a>.<br/>**Note that the Welcome hour cash bar will feature <u>non-alcoholic beverages only</u>.',
 		start: '2025-04-22T18:00',
 	},
 
