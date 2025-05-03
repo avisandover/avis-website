@@ -9,10 +9,12 @@ ruby "3.2.3"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3.4"
+gem "jekyll", "~> 4.4.1"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima"
+
+gem "jekyll-redirect-from"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -22,4 +24,5 @@ gem "minima"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-timeago", "~> 0.15.0"
+
 end
