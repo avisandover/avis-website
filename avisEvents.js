@@ -171,8 +171,8 @@ var avisEvents = [
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: 'TBD',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
-		start: '2025-05-10T08:30',
-		end: '2025-05-10T11:00',
+		start: '2025-05-17T08:30',
+		end: '2025-05-17T11:00',
 	},
 
 	{
