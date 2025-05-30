@@ -11,6 +11,13 @@
 var avisEvents = [
 
     {
+	title: 'Photo Competition Winners Gallery Exhibit',
+	location: 'Memorial Hall Library, 2 North Main Street, Andover',
+	description: 'The public is welcome to view the winning AVIS Photo Competition images at the Memorial Hall Library from June 1 to June 30<br/>Hours: Mon-Thu: 9am—9pm; Fri-Sat: 9am—5pm;Sun: 1-5pm',
+	start: '2025-06-01T09:00',
+    },
+    
+    {
 	title: '2025 Hike for Change, Day 16',
 	location: '<a href="https://www.thedirtyhandsproject.org/event-details/day-16-lowell-memorial-auditorium-bald-hill-andover-2">Register</a>',
 	description: 'Dirty Hands Project is a non-profit organization sponsoring the 2025 Hike for a Change. This 200-mile walk will occur throughout May (Mental Health Awareness Month) and follows the Bay Circuit Trail from Kingston, MA, to Newburyport, MA. Dirty Hands Project will be hiking the Andover sections of the BCT on May 19-21. Please join us as we hike through some of the amazing AVIS and Andover properties. Day 16: Lowell Memorial Auditorium -> Bald Hill, Andover.  Register <a href="https://www.thedirtyhandsproject.org/event-details/day-16-lowell-memorial-auditorium-bald-hill-andover-2">here</a>.',
