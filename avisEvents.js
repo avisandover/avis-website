@@ -232,7 +232,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: 'West Parish Meadow',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-06-29T13:00',
 		end: '2025-06-29T15:30',
