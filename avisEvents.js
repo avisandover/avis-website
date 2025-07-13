@@ -129,7 +129,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-03-29T08:30',
 		end: '2025-03-29T11:00',
@@ -160,7 +160,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-04-27T13:00',
 		end: '2025-04-27T15:30',
@@ -176,7 +176,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-05-17T08:30',
 		end: '2025-05-17T11:00',
@@ -192,7 +192,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-05-24T08:30',
 		end: '2025-05-24T11:00',
@@ -200,7 +200,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-06-07T08:30',
 		end: '2025-06-07T11:00',
@@ -216,7 +216,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-06-21T08:30',
 		end: '2025-06-21T11:00',
@@ -248,7 +248,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-07-19T08:30',
 		end: '2025-07-19T11:00',
@@ -256,7 +256,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-08-02T08:30',
 		end: '2025-08-02T11:00',
@@ -264,7 +264,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-08-16T08:30',
 		end: '2025-08-16T11:00',
@@ -272,7 +272,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-08-30T08:30',
 		end: '2025-08-30T11:00',
@@ -280,7 +280,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-09-13T08:30',
 		end: '2025-09-13T11:00',
@@ -288,7 +288,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-09-27T08:30',
 		end: '2025-09-27T11:00',
@@ -296,7 +296,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-10-11T08:30',
 		end: '2025-10-11T11:00',
@@ -304,7 +304,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-10-19T13:00',
 		end: '2025-10-19T15:30',
@@ -312,7 +312,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-11-01T08:30',
 		end: '2025-11-01T11:00',
@@ -320,7 +320,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-11-15T08:30',
 		end: '2025-11-15T11:00',
@@ -328,7 +328,7 @@ var avisEvents = [
 
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
-		location: 'TBD',
+		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
 		start: '2025-11-29T08:30',
 		end: '2025-11-29T11:00',
