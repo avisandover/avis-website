@@ -11,6 +11,14 @@
 var avisEvents = [
 
     {
+	title: 'Merrimack River Clean-up Afoot/Afloat',
+	location: 'Afoot and Afloat',
+	description:'<p><b>The Afoot hiking trail clean-up will begin at 15 Launching Road.</b><br/>There is plenty of street parking, and it has been the center of several past clean-ups. Thick trash bags, gloves, and grabber reacher tools for grasping those just out of reach floating water bottles, etc., will be provided.</p><p><b>The Afloat canoe/kayak clean-up will begin at the new Merrimack Conservation Area at the end of the Hefferon Right of Way.</b><br/>The site can be reached via a dirt road next to the Greater Lawrence Technical School. The paddling will begin and end here.  Folks are invited to bring their own watercraft; however, if someone needs a boat and gear, arrangements can possibly be pre-arranged. This is a bank launch, and rivers can be surprisingly challenging on occasion, so we are looking at experienced paddlers with medium to advanced skills.</p><p>Contact Bob Douglas at <a href="mailto:robert.douglas@andoverma.us">robert.douglas@andoverma.us</a> with questions.</p>',
+	start: '2025-08-23T10:00',
+	end: '2025-08-23T12:00',
+    },
+    
+    {
 	title: 'Photo Competition Winners Gallery Exhibit',
 	location: 'Memorial Hall Library, 2 North Main Street, Andover',
 	description: 'The public is welcome to view the winning AVIS Photo Competition images at the Memorial Hall Library from June 1 to June 30<br/>Hours: Mon-Thu: 9am—9pm; Fri-Sat: 9am—5pm;Sun: 1-5pm',
