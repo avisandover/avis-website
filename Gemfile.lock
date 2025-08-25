@@ -101,7 +101,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-redirect-from
   jekyll-timeago (~> 0.15.0)
-  minima (~> 2.5)
+  minima
 
 RUBY VERSION
    ruby 3.2.3p157

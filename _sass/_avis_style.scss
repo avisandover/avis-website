@@ -1,5 +1,3 @@
-@use "sass:color";
-
 body {
   margin-top: 50px;
 }
@@ -35,7 +33,7 @@ ul > li {
   $min-width: 768px;
   $max-width: $min-width - 1;
   $nav-color: #669966;
-  $nav-color-hover: color.adjust($nav-color, $lightness: -30%);
+  $nav-color-hover: darken($nav-color, 30%);
   $link-color: #ffffff;
   $link-color-hover: white;
   
