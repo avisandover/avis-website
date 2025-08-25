@@ -26,6 +26,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+
+# Sass configuration to handle deprecation warnings
+sass:
+  quiet_deps: true
 exclude:
   - Gemfile
   - Gemfile.lock
