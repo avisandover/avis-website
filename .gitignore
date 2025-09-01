@@ -8,7 +8,6 @@ Thumbs.db
 .DS_Store
 vendor
 .jekyll-cache
-.DS_Store
 
 bin
 cache
