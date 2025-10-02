@@ -10,6 +10,14 @@
 
 var avisEvents = [
 
+    {
+	title: 'Guided Nature & History Hike',
+	location: '<a href="https://andoverhistoryandculture.org/indigenous-history-walk" target="__blank">Registration is required. Limited to 30 people.</a>',
+	description: 'This special tour is typically offered in the fall. A collaboration between the Andover Center for History & Culture, AVIS, and Andover Conservation Commission, this walk is a guided nature and history hike on Deer Jump and Retelle Reservations.  <a href="​​https://andoverhistoryandculture.org/indigenous-history-walk">​​https://andoverhistoryandculture.org/indigenous-history-walk</a>',
+	start: '2025-10-13T10:00',
+	end: '2025-10-13T11:30'
+    },
+    
 	{
 		title: 'Try Exploring Andover (TEA) Time',
 		location: 'West Parish Meadow, Indian Ridge and Baker’s Meadow Reservations',
@@ -322,8 +330,8 @@ var avisEvents = [
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
 		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
-		start: '2025-10-19T13:00',
-		end: '2025-10-19T15:30',
+		start: '2025-10-18T08:30',
+		end: '2025-10-18T11:00',
 	},
 
 	{
