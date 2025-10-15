@@ -11,6 +11,27 @@
 var avisEvents = [
 
     {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Rafton, Fish Brook and Bald Hill, Wood Hill Reservations',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC.   <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000001nToH2AU/act00016532">Registration opens October 17</a>',
+	start: '2025-10-30T10:00',
+    },
+
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'West Parish Meadow/Indian Ridge and Baker’s Meadow Reservations',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC.   <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000001nU7d2AE/act00016533">Registration opens November 21</a>',
+	start: '2025-12-04T10:00',
+    },
+
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Hike along the Shawsheen River through the Shawsheen and Dale Reservations',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC.   <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000001nUPN2A2/act00016535">Registration opens December 5</a>',
+	start: '2025-12-18T10:00',
+    },
+
+    {
 	title: 'Guided Nature & History Hike',
 	location: '<a href="https://andoverhistoryandculture.org/indigenous-history-walk" target="__blank">Registration is required. Limited to 30 people.</a>',
 	description: 'This special tour is typically offered in the fall. A collaboration between the Andover Center for History & Culture, AVIS, and Andover Conservation Commission, this walk is a guided nature and history hike on Deer Jump and Retelle Reservations.  <a href="​​https://andoverhistoryandculture.org/indigenous-history-walk">​​https://andoverhistoryandculture.org/indigenous-history-walk</a>',
@@ -154,7 +175,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-03-29T08:30',
 		end: '2025-03-29T11:00',
 	},
@@ -185,7 +206,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-04-27T13:00',
 		end: '2025-04-27T15:30',
 	},
@@ -201,7 +222,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-05-17T08:30',
 		end: '2025-05-17T11:00',
 	},
@@ -217,7 +238,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-05-24T08:30',
 		end: '2025-05-24T11:00',
 	},
@@ -225,7 +246,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-06-07T08:30',
 		end: '2025-06-07T11:00',
 	},
@@ -241,7 +262,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-06-21T08:30',
 		end: '2025-06-21T11:00',
 	},
@@ -257,7 +278,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: 'West Parish Meadow',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-06-29T13:00',
 		end: '2025-06-29T15:30',
 	},
@@ -265,7 +286,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: 'Goldsmith Reservation',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-07-06T08:30',
 		end: '2025-07-06T11:00',
 	},
@@ -273,7 +294,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-07-19T08:30',
 		end: '2025-07-19T11:00',
 	},
@@ -281,7 +302,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-08-02T08:30',
 		end: '2025-08-02T11:00',
 	},
@@ -289,7 +310,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-08-16T08:30',
 		end: '2025-08-16T11:00',
 	},
@@ -297,7 +318,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-08-30T08:30',
 		end: '2025-08-30T11:00',
 	},
@@ -305,7 +326,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-09-13T08:30',
 		end: '2025-09-13T11:00',
 	},
@@ -313,7 +334,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-09-27T08:30',
 		end: '2025-09-27T11:00',
 	},
@@ -321,7 +342,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-10-11T08:30',
 		end: '2025-10-11T11:00',
 	},
@@ -329,7 +350,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-10-18T08:30',
 		end: '2025-10-18T11:00',
 	},
@@ -337,7 +358,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-11-01T08:30',
 		end: '2025-11-01T11:00',
 	},
@@ -345,7 +366,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-11-15T08:30',
 		end: '2025-11-15T11:00',
 	},
@@ -353,7 +374,7 @@ var avisEvents = [
 	{
 		title: 'Eco Team Invasive Plant identification and Removal Session',
 		location: '<a href="http://eepurl.com/ipSNWc">Sign up for Eco Team emails</a>',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2025-11-29T08:30',
 		end: '2025-11-29T11:00',
 	},
@@ -361,7 +382,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Andover Highlands',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-11-30T08:30',
 		end: '2024-11-30T11:00',
 	},
@@ -369,7 +390,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Deer Jump at Brundrett Avenue',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-11-16T08:30',
 		end: '2024-11-16T11:00',
 	},
@@ -377,7 +398,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Goldsmith Woods',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-11-03T13:00',
 		end: '2024-11-03T15:00',
 	},
@@ -393,7 +414,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Sanborn Reservation',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-10-05T08:30',
 		end: '2024-10-05T11:00',
 	},
@@ -401,7 +422,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Deer Jump at Jillian Way',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-10-13T13:00',
 		end: '2024-10-13T15:00',
 	},
@@ -409,7 +430,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Deer Jump at Brundrett Avenue',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-10-26T08:30',
 		end: '2024-10-26T11:00',
 	},
@@ -417,7 +438,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Deer Jump at Nollet',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-08-31T08:30',
 		end: '2024-08-31T11:00',
 	},
@@ -425,7 +446,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Deer Jump at Nollet',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-09-08T08:30',
 		end: '2024-09-08T11:00',
 	},
@@ -433,7 +454,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Andover Highlands',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-09-21T08:30',
 		end: '2024-09-21T11:00',
 	},
@@ -441,7 +462,7 @@ var avisEvents = [
 	{
 		title: 'World Conservation Day',
 		location: 'TBA',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-07-27T09:00',
 		end: '2024-07-27T13:00',
 	},
@@ -449,7 +470,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Andover Highlands',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-08-03T08:30',
 		end: '2024-08-03T11:00',
 	},
@@ -457,7 +478,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Sakowich Reservation',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-08-17T08:30',
 		end: '2024-08-17T11:00',
 	},
@@ -481,7 +502,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Andover Highlands Reservation',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-07-07T13:00',
 		end: '2024-07-07T15:30',
 	},
@@ -489,7 +510,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Andover Highlands',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-06-29T08:30',
 		end: '2024-06-29T11:00',
 	},
@@ -497,7 +518,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Shawsheen River Reservation',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-06-15T08:30',
 		end: '2024-06-15T11:00',
 	},
@@ -505,7 +526,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Richard J. Bonier',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-05-18T08:30',
 		end: '2024-05-18T11:00',
 	},
@@ -521,7 +542,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Lupine Road Reservation and Shawsheen River Reservation',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-06-01T08:30',
 		end: '2024-06-01T11:00',
 	},
@@ -529,7 +550,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Sunset Rock at Hammond Way',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. <br/><br/>The weather looks to be a mix of clouds and sun in the morning. Sunset Rock was basically closed for years due to the trails and entrance being impassible. A lot of work has been done in the last couple of years by the wardens, various volunteer groups, and the Eco Team. The trails are very well-defined now. It has an astounding amount of Burning Bush (Euonymus alatus). You\'ll learn to identify all stages of this plant.<br /><br />Park on Hammond Way. Please do not block any driveways. The entrance is down the dirt road, which is actually someone\'s driveway. Please walk along the grass on the right, which is the AVIS easement.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team. <br/><br/>The weather looks to be a mix of clouds and sun in the morning. Sunset Rock was basically closed for years due to the trails and entrance being impassible. A lot of work has been done in the last couple of years by the wardens, various volunteer groups, and the Eco Team. The trails are very well-defined now. It has an astounding amount of Burning Bush (Euonymus alatus). You\'ll learn to identify all stages of this plant.<br /><br />Park on Hammond Way. Please do not block any driveways. The entrance is down the dirt road, which is actually someone\'s driveway. Please walk along the grass on the right, which is the AVIS easement.',
 		start: '2024-04-13T08:30',
 		end: '2024-04-13T11:00',
 	},
@@ -553,7 +574,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Goldsmith Woods',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-04-27T08:30',
 		end: '2024-04-27T11:00',
 	},
@@ -561,7 +582,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Sunset Rock',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-05-05T08:30',
 		end: '2024-05-05T11:00',
 	},
@@ -577,7 +598,7 @@ var avisEvents = [
 	{
 		title: 'Invasive Plant identification and Removal Session',
 		location: 'Deer Jump at Brundrett Avenue',
-		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> to be put on the Eco Team email list. You’ll get up-to-date notifications about the location.',
+		description: 'Email Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 		start: '2024-03-30T08:30',
 		end: '2024-03-30T11:00',
 	},
