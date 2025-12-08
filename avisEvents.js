@@ -10,6 +10,69 @@
 
 var avisEvents = [
 
+
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Den Rock Park and Bird Sanctuary',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022ARx2AM/act00017828">Registration Opens Sunday, December 28, 2025</a>',
+	start: '2026-01-08T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Bay Circuit Trail through the Charles Ward Reservation',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000001rMZh2AM/act00016814">Registration Opens Sunday, February 1, 2026</a>',
+	start: '2026-02-12T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Bay Circuit Trail – Deer Jump and Harold Rafton Reservations',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN000001rMcv2AE/act00016815">Registration Opens Sunday, February 15, 2026</a>',
+	start: '2026-02-26T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Bay Circuit Trail – Harold Parker State Forest to Skug River Reservation',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022AVB2A2/act00017830">Registration Opens Sunday, March 1, 2026</a>',
+	start: '2026-03-12T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'West Parish to Pomps Pond',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022ATZ2A2/act00017829">Registration Opens Sunday, March 15, 2026</a>',
+	start: '2026-03-15T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Bay Circuit Trail Andover to Tewksbury Spur',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022AgT2AU/act00017831">Registration Opens Sunday, March 29, 2026</a>',
+	start: '2026-04-09T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Harold Parker State Forest Stearns & Sudden Ponds',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022FoD2AU/act00017843">Registration Opens Sunday, April 12, 2026</a>',
+	start: '2026-04-23T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Bay Circuit Trail – Deer Jump and Retelle Reservations and beyond',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022Fhl2AE/act00017841">Registration Opens Sunday, May 3, 2026</a>',
+	start: '2026-05-14T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Bessie Goldsmith Reservation and All Persons Trail',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022FjN2AU/act00017842">Registration Opens Sunday, May 17, 2026</a>',
+	start: '2026-05-28T10:00',
+    },
+    {
+	title: 'Try Exploring Andover (TEA) Time',
+	location: 'Bay Circuit Trail – Boxford State Forest in North Andover',
+	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022IMH/act00017848">Registration Opens Sunday, May 31, 2026</a>',
+	start: '2026-06-11T10:00',
+    },
+
+    
     {
 	title: 'Try Exploring Andover (TEA) Time',
 	location: 'Rafton, Fish Brook and Bald Hill, Wood Hill Reservations',
