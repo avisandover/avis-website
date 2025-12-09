@@ -2,9 +2,44 @@
 layout: default
 title: AVIS - Homepage
 ---
+<script src='/avisEvents.js'></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded',function() {
+
+      avisEvents.sort(function(a,b) {
+	  var aDate = new Date(a.start);
+	  var bDate = new Date(b.start);
+	  return aDate - bDate;
+      });
+
+      var futureRows = document.getElementById("upcomingEvents").tBodies[0];
+      var shown = 0;
+      for (event of avisEvents) {
+	  startDate = new Date(event.start)
+	  if (startDate > Date.now()) {
+	      if (shown < 3) {
+		  var row = futureRows.insertRow();
+		  var cell0 = row.insertCell(0);
+		  cell0.innerHTML = '<p><a href="/events.html" target="_blank">'+toShortDate(event.start,event.end)+'</a> ' + event.shortDescription + '</p> ';
+		  shown += 1;
+	      }
+	  }
+      }
+      if (shown == 0) {
+	  var row = futureRows.insertRow();
+	  var cell0 = row.insertCell(0);
+	  cell0.innerHTML = 'No upcoming events';
+      }	  
+      
+  });
+</script>
+
 <script src="/assets/js/jquery-2.1.4.min.js"></script>
+
 <script>
   // Set the height on all carousel items to be the same, so the carousel doesn't change height as it rotates through.
+  // This really doesn't work as it should, but it's better than nothing.
   function normalizeSlideHeights() {
       $('.carousel').carousel(0);
       $('.carousel').each(function() {
@@ -139,20 +174,11 @@ $(window).on('load resize orientationchange', normalizeSlideHeights);
           </div>
 
           <h2>Upcoming Events</h2>
+	  <table id="upcomingEvents" align="center">
+	    <tbody>
+            </tbody>
+	  </table>
 
-	  <p>
-            <a href="/events.html" target="_blank">Thursday, December 4, 2025</a>
-	    Hike around West Parish, Indian Ridge, Baker's Meadow
-	    <br />
-	  </p>
-
-	  <p>
-            <a href="/events.html" target="_blank">Thursday, December 18, 2025</a>
-	    Hike along the Shawsheen River through the Shawsheen and Dale Reservations
-	    <br />
-	  </p>
-
-	  
 <br/>
 <br/>
           <div>

@@ -6,47 +6,6 @@ title: AVIS Events
 <script src='/avisEvents.js'></script>
 
 <script>
-  const dayName = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
-  const monthName = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-
-  function toClockRange(startHours,startMinutes,endHours,endMinutes) {
-      var clockTime = "";
-      var startSuffix = "";
-      var endSuffix = "";
-      if (isNaN(endHours)) {
-	  if (startHours < 12) {
-	      endSuffix = " am";
-	  } else {
-	      endSuffix = " pm";
-	  }
-      } else if (startHours < 12 && endHours < 12) {
-	  endSuffix = " am";
-      } else if (startHours < 12 && endHours >= 12) {
-	  startSuffix = " am";
-	  endSuffix = " pm";
-      } else {
-	  endSuffix = " pm";
-      }
-	  
-      clockTime += (startHours > 12) ? (startHours-12) : (startHours);
-      clockTime += ':';
-      clockTime += (startMinutes < 10) ? ("0"+startMinutes.toString()) : (startMinutes.toString());
-      clockTime += startSuffix;
-      if (! isNaN(endHours)) {
-	  clockTime += ' - ';
-	  clockTime += (endHours > 12) ? (endHours-12) : (endHours);
-	  clockTime += ':';
-	  clockTime += (endMinutes < 10) ? ("0"+endMinutes.toString()) : (endMinutes.toString());
-      }
-      clockTime += endSuffix;
-      return clockTime;
-  }
-  
-  function toAvisDate(start,end) {
-      s = new Date(start)
-      e = new Date(end)
-      return dayName[s.getDay()]+'<br/>'+monthName[s.getMonth()]+' '+s.getDate()+', '+s.getFullYear()+'<br/>'+toClockRange(s.getHours(),s.getMinutes(),e.getHours(),e.getMinutes());
-  }
   document.addEventListener('DOMContentLoaded',function() {
 
       avisEvents.sort(function(a,b) {
