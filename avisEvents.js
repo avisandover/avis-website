@@ -14,7 +14,7 @@ var avisEvents = [
 	title: 'Andover Ales & Trails (AA&T)',
 	location: 'Bessie Goldsmith Reservation',
 	shortDescription: 'Andover Ales & Trails: Hike the Bessie Goldsmith Reservation and meet back at Oak and Iron',
-	description: 'Hike Goldsmith Reservation then meet back at Oak and Iron.  <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000024cLh2AI/act00018025">Registration Opens Thursday, January 29, 2026 | 4:00 PM</a>',
+	description: 'Hike Goldsmith Reservation then meet back at Oak and Iron.  <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000024cLh2AI/act00018025">Registration Opens Thursday, January 22, 2026 | 4:00 PM</a>',
 	start: '2026-02-01T13:15',
     },
     {
