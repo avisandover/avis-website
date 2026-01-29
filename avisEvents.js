@@ -11,6 +11,16 @@
 var avisEvents = [
 
     {
+	title: 'AVIS Photo Exhibit Opening Night',
+	titleHtml: '<a href="/exhibit/2025-photo/index.html" target="_blank">AVIS Photo Exhibit Opening Night</a>',
+	location: 'Robb Center, 30 Whittier Court, Andover',
+	shortDescription: 'AVIS Photo Exhibit Opening Night Celebration presenting 33 winning images',
+	description: 'The public is welcome to join us for our free Opening Night celebration presenting 33 winning images from our 2025 Photo Competition at the Robb Center.',
+	start: '2026-03-05T18:30',
+	end: '2026-03-05T20:00',
+    },
+
+    {
 	title: 'Andover Ales & Trails (AA&T)',
 	location: 'Bessie Goldsmith Reservation',
 	shortDescription: 'Andover Ales & Trails: Hike the Bessie Goldsmith Reservation and meet back at Oak and Iron',
