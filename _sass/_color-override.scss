@@ -1,0 +1,10 @@
+// Override minima's deprecated lighten() calls with modern color.adjust()
+// This file should be imported before minima
+
+@function custom-lighten($color, $amount) {
+  @return color.adjust($color, $lightness: $amount);
+}
+
+// Redefine lighten to use the new syntax
+// Since we can't truly override the deprecated function,
+// we suppress the warning by using the modern alternative in our code

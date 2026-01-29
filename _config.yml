@@ -30,4 +30,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+sass:
+  quiet_deps: true
+  future: false
+
 port: 5000
