@@ -21,18 +21,22 @@ title: AVIS - 2025 Photo Competition Winners
                             gap: 10px;
                             justify-content: flex-start;
                             align-items: stretch;
+                            border-top: 1px solid lightgray;
+                            padding-top: 8px;
+                            margin-bottom: 12px;
                         }
 
                         .gallery {
-                            padding: 10px;
+                            padding: 8px 10px;
                             width: 240px;
-                            height: 300px;
+                            height: auto;
                             box-sizing: border-box;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                             justify-content: flex-start;
                             text-align: center;
+                            gap: 8px;
                         }
 
                         .gallery img {
@@ -42,17 +46,41 @@ title: AVIS - 2025 Photo Competition Winners
                         }
 
                         .gallery p {
-                            margin: 0 0 8px 0;
+                            margin: 0;
+                            line-height: 1.2;
+                        }
+
+                        .grand-prize-title {
+                            margin-bottom: 8px;
+                        }
+
+                        .grand-prize-container {
+                            justify-content: center;
+                            margin-bottom: 10px;
+                        }
+
+                        .gallery.grand-prize {
+                            width: auto;
+                            height: auto;
+                            padding: 0;
+                        }
+
+                        .gallery.grand-prize p {
+                            margin: 0;
+                        }
+
+                        .gallery.grand-prize img {
+                            width: 300px !important;
+                            height: auto !important;
+                            object-fit: cover !important;
                         }
                     </style>
 
-                    <h3>Grand Prize Winner</h3>
-                    <div class="gallery-container">
-                        <a href="/competitions/2025-photo/winners/Deep-Blue.gif" class="gray lightbox-image gallery"
+                    <h3 class="grand-prize-title">Grand Prize Winner</h3>
+                    <div class="gallery-container grand-prize-container">
+                        <a href="/competitions/2025-photo/winners/Deep-Blue.gif" class="gray lightbox-image gallery grand-prize"
                             title="Deep Blue">
-                            <p>Grand Prize Winner</p>
-                            <img src="/competitions/2025-photo/winners/Deep-Blue.gif"
-                                style="width: 200px; height: 200px; object-fit: contain;" />
+                            <img src="/competitions/2025-photo/winners/Deep-Blue.gif" />
                             <p>Christopher Vrountas<br>Deep Blue</p>
                         </a>
                     </div>
@@ -466,7 +494,7 @@ title: AVIS - 2025 Photo Competition Winners
                             <p>Runner Up</p>
                             <img src="/competitions/2025-photo/winners/Novice Eye/Sun-in-Woods.gif"
                                 style="width: 150px; height: 150px; object-fit: contain;" />
-                            <p>Quinn Hartwell<br>Sun in Woods</p>
+                            <p>Rowan Hartwell<br>Sun in Woods</p>
                         </a>
 
                         <a href="/competitions/2025-photo/winners/Novice Eye/On-Top-of-the-World.gif"
