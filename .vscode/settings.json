@@ -5,6 +5,6 @@
         "Retelle",
         "trailsguide"
     ],
-    "snyk.advanced.organization": "aad8fb9f-3eea-4446-bab8-694ce02ec3fc",
-    "snyk.advanced.autoSelectOrganization": true
+    "snyk.advanced.autoSelectOrganization": true,
+    "snyk.advanced.organization": "aad8fb9f-3eea-4446-bab8-694ce02ec3fc"
 }

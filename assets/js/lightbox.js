@@ -38,9 +38,9 @@ function is_vimeolink(url,el) {
     xmlhttp.send();
 }
 function setGallery(el) {
-    var elements = document.body.querySelectorAll(".gallery");
+    var elements = document.body.querySelectorAll(".lb-gallery");
     elements.forEach(element => {
-        element.classList.remove('gallery');
+        element.classList.remove('lb-gallery');
 	});
 	if(el.closest('ul, p')) {
 		var link_elements = el.closest('ul, p').querySelectorAll("a[class*='lightbox-']");
@@ -53,13 +53,13 @@ function setGallery(el) {
 			}
 		});
 		if(link_elements.length>1) {
-			document.getElementById('lightbox').classList.add('gallery');
+            document.getElementById('lightbox').classList.add('lb-gallery');
 			link_elements.forEach(link_element => {
-				link_element.classList.add('gallery');
+                link_element.classList.add('lb-gallery');
 			});
 		}
 		var currentkey;
-		var gallery_elements = document.querySelectorAll('a.gallery');
+        var gallery_elements = document.querySelectorAll('a.lb-gallery');
 		Object.keys(gallery_elements).forEach(function (k) {
 			if(gallery_elements[k].classList.contains('current')) currentkey = k;
 		});
