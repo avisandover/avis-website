@@ -15,7 +15,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-04-11T08:30',
-	end: '2025-04-11T11:00',
+	end: '2026-04-11T11:00',
     },
     
     {
@@ -23,7 +23,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-04-25T08:30',
-	end: '2025-04-25T11:00',
+	end: '2026-04-25T11:00',
     },
     
     {
@@ -31,7 +31,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-05-03T13:00',
-	end: '2025-05-T15:30',
+	end: '2026-05-03T15:30',
     },
     
     {
@@ -39,7 +39,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-05-23T08:30',
-	end: '2025-05-23T11:00',
+	end: '2026-05-23T11:00',
     },
     
     {
@@ -47,7 +47,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-06-06T08:30',
-	end: '2025-06-06T11:00',
+	end: '2026-06-06T11:00',
     },
     
     {
@@ -55,7 +55,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-06-20T08:30',
-	end: '2025-06-20T11:00',
+	end: '2026-06-20T11:00',
     },
     
     {
@@ -63,7 +63,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-06-28T13:00',
-	end: '2025-06-28T15:50',
+	end: '2026-06-28T15:30',
     },
     
     {
@@ -71,7 +71,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-07-05T13:00',
-	end: '2025-07-05T15:30',
+	end: '2026-07-05T15:30',
     },
     
     {
@@ -79,7 +79,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-07-11T08:30',
-	end: '2025-07-11T11:00',
+	end: '2026-07-11T11:00',
     },
     
     {
@@ -87,7 +87,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-07-25T08:30',
-	end: '2025-07-25T11:00',
+	end: '2026-07-25T11:00',
     },
     
     {
@@ -95,7 +95,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-08-02T13:00',
-	end: '2025-08-T15:30',
+	end: '2026-08-02T15:30',
     },
     
     {
@@ -103,7 +103,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-08-15T08:30',
-	end: '2025-08-15T11:00',
+	end: '2026-08-15T11:00',
     },
     
     {
@@ -111,7 +111,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-08-29T08:30',
-	end: '2025-08-29T11:00',
+	end: '2026-08-29T11:00',
     },
     
     {
@@ -119,7 +119,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-09-12T08:30',
-	end: '2025-09-12T11:00',
+	end: '2026-09-12T11:00',
     },
     
     {
@@ -127,7 +127,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-09-26T08:30',
-	end: '2025-09-26T11:00',
+	end: '2026-09-26T11:00',
     },
     
     {
@@ -135,7 +135,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-10-10T08:30',
-	end: '2025-10-10T11:00',
+	end: '2026-10-10T11:00',
     },
     
     {
@@ -143,7 +143,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-10-18T13:00',
-	end: '2025-10-18T15:30',
+	end: '2026-10-18T15:30',
     },
     
     {
@@ -151,15 +151,15 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-10-24T08:30',
-	end: '2025-10-24T11:00',
+	end: '2026-10-24T11:00',
     },
     
     {
 	title: 'Eco Team Invasive Plant identification and Removal Session',
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
-	start: '2026-11-01T11:00',
-	end: '2025-11-01T15:30',
+	start: '2026-11-01T13:00',
+	end: '2026-11-01T15:30',
     },
     
     {
@@ -167,7 +167,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-11-14T08:30',
-	end: '2025-11-14T11:00',
+	end: '2026-11-14T11:00',
     },
     
     {
@@ -175,7 +175,7 @@ var avisEvents = [
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> or mail Lynn at <a href="mailto:HamletofLynn@gmail.com">HamletofLynn@gmail.com</a> if you have questions about Eco Team.',
 	start: '2026-11-28T08:30',
-	end: '2025-11-28T11:00',
+	end: '2026-11-28T11:00',
     },
     
     {
