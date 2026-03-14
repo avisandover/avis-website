@@ -5,6 +5,7 @@
 // - titleHtml: Optional, defaults to title; text seen in the events table.  Can contain html tags.
 // - location:
 // - description: can contain html tags
+// - shortDescription: used on home page list of next three events, default is title
 // - start: start date/time
 // - end: Optional, end date/time
 
@@ -249,7 +250,7 @@ var avisEvents = [
 	location: 'West Parish to Pomps Pond',
 	shortDescription: 'TEA Time Hike from West Parish to Pomps Pond',
 	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022ATZ2A2/act00017829">Registration Opens Sunday, March 15, 2026</a>',
-	start: '2026-03-15T10:00',
+	start: '2026-03-26T10:00',
     },
     {
 	title: 'Try Exploring Andover (TEA) Time',

@@ -21,7 +21,8 @@ title: AVIS - Homepage
 	      if (shown < 3) {
 		  var row = futureRows.insertRow();
 		  var cell0 = row.insertCell(0);
-		  cell0.innerHTML = '<p><a href="/events.html" target="_blank">'+toShortDate(event.start,event.end)+'</a> ' + event.shortDescription + '</p> ';
+		  var shortDescription = ( 'shortDescription' in event ? event.shortDescription : event.title );
+		  cell0.innerHTML = '<p><a href="/events.html" target="_blank">'+toShortDate(event.start,event.end)+'</a> ' + (event.shortDescription||event.title) + '</p> ';
 		  shown += 1;
 	      }
 	  }
