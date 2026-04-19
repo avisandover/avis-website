@@ -12,6 +12,19 @@
 var avisEvents = [
 
     {
+	title: 'BioBlitz walk with naturalist Harley Monteiro',
+	location: 'Indian Ridge, West Parish Meadow',
+	description: 'Join Harley on a guided BioBlitz on abutting AVIS reservations: Indian Ridge and West Parish Meadow. The event is free to attend. Download the iNaturalist app beforehand and create an account. Harley will give an instructional tutorial at the beginning. Park at Andover High School near the Collins Center. It is a steep walk in and out over the esker. Please bring water, sturdy shoes, and your curiosity!',
+	start: '2026-04-26T13:00',
+	end: '2026-04-26T15:00',
+    },
+    {
+	title: 'Nate Whitmer "Let\'s talk about plants"',
+	location: 'Nevins Library, Methuen',
+	description: 'Nate is giving one of his highly entertaining and informative talks. He\'s full of tips on identification, removal methods, and what to plant instead. <a href="https://avisandover.us13.list-manage.com/track/click?u=390148158ff838c2a9e36871e&id=a3359a84f0&e=ffdb667c77">Sign up on the Nevins Library website</a>.',
+	start: '2026-05-19T18:30',
+    },
+    {
 	title: 'Eco Team Invasive Plant identification and Removal Session',
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> and read the <a href="https://blog.avisandover.org/2026/01/avis-eco-team/">blog</a> for more information.',
