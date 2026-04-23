@@ -10,7 +10,27 @@
 // - end: Optional, end date/time
 
 var avisEvents = [
-
+    {
+	title: '2026 Hike for a Change',
+	location: 'Lowell to Deer Jump Reservation to Bald Hill <a href="https://runsignup.com/Race/Register/?raceId=178589&eventGroupId=33065">Register</a>',
+	description: 'Dirty Hands Project is a non-profit organization sponsoring the 2026 Hike for a Change. This 230-mile walk will occur throughout May (Mental Health Awareness Month) and follows the Bay Circuit Trail from Kingston, MA, to Newburyport, MA. Dirty Hands Project will be hiking the Andover/North Andover sections of the BCT on May 19-21. Please join us as we hike through some of the amazing AVIS and Andover properties. <a href="https://runsignup.com/Race/Register/?raceId=178589&eventGroupId=33065">Register here</a> to hike any of the 23 sections of the Bay Circuit Trail. Sat April 25 - Sat May 30, 2026: <a href="https://runsignup.com/Race/MA/Duxbury/HikeForAChange">Learn more</a>',
+	start: '2026-05-19T09:45',
+	end: '2026-05-19T14:00',
+    },
+    {
+	title: '2026 Hike for a Change',
+	location: 'Bald Hill to Charles Ward Reservation <a href="https://runsignup.com/Race/Register/?raceId=178589&eventGroupId=33065">Register</a>',
+	description: 'Dirty Hands Project is a non-profit organization sponsoring the 2026 Hike for a Change. This 230-mile walk will occur throughout May (Mental Health Awareness Month) and follows the Bay Circuit Trail from Kingston, MA, to Newburyport, MA. Dirty Hands Project will be hiking the Andover/North Andover sections of the BCT on May 19-21. Please join us as we hike through some of the amazing AVIS and Andover properties. <a href="https://runsignup.com/Race/Register/?raceId=178589&eventGroupId=33065">Register here</a> to hike any of the 23 sections of the Bay Circuit Trail. Sat April 25 - Sat May 30, 2026: <a href="https://runsignup.com/Race/MA/Duxbury/HikeForAChange">Learn more</a>',
+	start: '2026-05-20T09:45',
+	end: '2026-05-20T14:00',
+    },
+    {
+	title: '2026 Hike for a Change',
+	location: 'Charles Ward Reservation to Harold Parker State Forest <a href="https://runsignup.com/Race/Register/?raceId=178589&eventGroupId=33065">Register</a>',
+	description: 'Dirty Hands Project is a non-profit organization sponsoring the 2026 Hike for a Change. This 230-mile walk will occur throughout May (Mental Health Awareness Month) and follows the Bay Circuit Trail from Kingston, MA, to Newburyport, MA. Dirty Hands Project will be hiking the Andover/North Andover sections of the BCT on May 19-21. Please join us as we hike through some of the amazing AVIS and Andover properties. <a href="https://runsignup.com/Race/Register/?raceId=178589&eventGroupId=33065">Register here</a> to hike any of the 23 sections of the Bay Circuit Trail. Sat April 25 - Sat May 30, 2026: <a href="https://runsignup.com/Race/MA/Duxbury/HikeForAChange">Learn more</a>',
+	start: '2026-05-21T09:45',
+	end: '2026-05-21T14:00',
+    },
     {
 	title: 'BioBlitz walk with naturalist Harley Monteiro',
 	location: 'Indian Ridge, West Parish Meadow',
