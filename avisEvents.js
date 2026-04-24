@@ -299,13 +299,13 @@ var avisEvents = [
 	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022FoD2AU/act00017843">Registration Opens Sunday, April 12, 2026</a>',
 	start: '2026-04-23T10:00',
     },
-    {
-	title: 'Try Exploring Andover (TEA) Time',
-	location: 'Bay Circuit Trail – Deer Jump and Retelle Reservations and beyond',
-	shortDescription: 'TEA Time Hike around Deer Jump and Retelle Reservations and beyond',
-	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022Fhl2AE/act00017841">Registration Opens Sunday, May 3, 2026</a>',
-	start: '2026-05-14T10:00',
-    },
+//    {
+//	title: 'Try Exploring Andover (TEA) Time',
+//	location: 'Bay Circuit Trail – Deer Jump and Retelle Reservations and beyond',
+//	shortDescription: 'TEA Time Hike around Deer Jump and Retelle Reservations and beyond',
+//	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022Fhl2AE/act00017841">Registration Opens Sunday, May 3, 2026</a>',
+//	start: '2026-05-14T10:00',
+//    },
     {
 	title: 'Try Exploring Andover (TEA) Time',
 	location: 'Bessie Goldsmith Reservation and All Persons Trail',
