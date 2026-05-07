@@ -306,13 +306,13 @@ var avisEvents = [
 //	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022Fhl2AE/act00017841">Registration Opens Sunday, May 3, 2026</a>',
 //	start: '2026-05-14T10:00',
 //    },
-    {
-	title: 'Try Exploring Andover (TEA) Time',
-	location: 'Bessie Goldsmith Reservation and All Persons Trail',
-	shortDescription: 'TEA Time Hike around Bessie Goldsmith Reservation and All Persons Trail',
-	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022FjN2AU/act00017842">Registration Opens Sunday, May 17, 2026</a>',
-	start: '2026-05-28T10:00',
-    },
+//    {
+//	title: 'Try Exploring Andover (TEA) Time',
+//	location: 'Bessie Goldsmith Reservation and All Persons Trail',
+//	shortDescription: 'TEA Time Hike around Bessie Goldsmith Reservation and All Persons Trail',
+//	description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <a href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022FjN2AU/act00017842">Registration Opens Sunday, May 17, 2026</a>',
+//	start: '2026-05-28T10:00',
+//    },
     {
 	title: 'Try Exploring Andover (TEA) Time',
 	location: 'Bay Circuit Trail – Boxford State Forest in North Andover',
