@@ -10,6 +10,13 @@
 // - end: Optional, end date/time
 
 var avisEvents = [
+
+		{
+				title: 'Try Exploring Andover (TEA) Time',
+				location: 'Trails & Sails - Bessie Goldsmith Reservation',
+				description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <A href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022FjN">Registration Opens Tuesday September 1, 2026</a>',
+				start: '2026-09-20T10:00',
+		},
     {
 	title: '2026 Hike for a Change',
 	location: 'Lowell to Deer Jump Reservation to Bald Hill <a href="https://runsignup.com/Race/Register/?raceId=178589&eventGroupId=33065">Register</a>',
