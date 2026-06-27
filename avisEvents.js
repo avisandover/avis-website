@@ -12,6 +12,13 @@
 var avisEvents = [
 
 		{
+				title: 'Merrimack River Shoreline Cleanup',
+				location: 'Launching Road trailhead',
+				description: 'Join Andover Conservation to walk the Merrimack River shoreline at Deer Jump to collect as much litter as safely can be grabbed by hand. Hip boots or waders may come in handy if you have them. Trash bags will be provided along with a couple of Gorilla carts and sharps containers.  No registration required.',
+				start: '2026-07-17T09:00',
+				end: '2026-07-17T12:00',
+		},
+		{
 				title: 'Try Exploring Andover (TEA) Time',
 				location: 'Trails & Sails - Bessie Goldsmith Reservation',
 				description: 'AVIS Trustee, Mark Kaluzny, is leading a series of hikes for the AMC. <A href="https://activities.outdoors.org/s/oc-activity/a5UUN0000022FjN">Registration Opens Tuesday September 1, 2026</a>',
