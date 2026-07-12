@@ -12,6 +12,13 @@
 var avisEvents = [
 
 		{
+				title: 'Native Species Bingo',
+				location: 'Al Retelle Conservation Area <a href="https://www.signupgenius.com/go/10C0444AEAA2FA6F9C16-64672538-native">sign up link</a>',
+				description: 'Get outdoors to learn a little more about the work that Conservation has been doing to remove invasives at Al Retelle Conservation Area and play a fun game to better examine what has been accomplished!   Anyone can participate free of charge. This game has been organized by Andover Conservation and although <a href="https://www.signupgenius.com/go/10C0444AEAA2FA6F9C16-64672538-native">registration</a> is not required, it is appreciated. There will be prizes for those who can find the most native species!',
+				start: '2026-07-21T09:00',
+				end: '2026-07-21T11:00',
+		},
+		{
 				title: 'Merrimack River Shoreline Cleanup',
 				location: 'Launching Road trailhead',
 				description: 'Join Andover Conservation to walk the Merrimack River shoreline at Deer Jump to collect as much litter as safely can be grabbed by hand. Hip boots or waders may come in handy if you have them. Trash bags will be provided along with a couple of Gorilla carts and sharps containers.  No registration required.',
