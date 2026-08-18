@@ -12,6 +12,21 @@
 var avisEvents = [
 
 		{
+				title: 'Senior Involvement Fair',
+				location: 'The Robb Center, 30 Whittier Ct., Andover',
+				description: 'Stop by the AVIS table at the Senior Involvement Fair to learn all about Eco Team, ongoing hikes, The Goldsmith Woodlands All Persons Trail, and other ways to get involved with AVIS.',
+				start: '2026-10-22T17:30',
+				end: '2026-10-22T19:30',
+		},
+    {
+				title: 'AVIS tent at the Andover Farmer\'s Market',
+				titleHtml: 'AVIS tent at the Andover Farmer\'s Market <a href="https://andoverfarmersmarket.com/">andoverfarmersmarket.com</a>',
+        location: '34 Bartlet Street Andover between Town Offices and The Park.',
+				description: 'Stop by the AVIS tent at the Andover Farmer’s Market to learn about Eco Team, ongoing hikes, Goldsmith Woodlands APT updates, and ways students can fulfill community service requirements.',
+				start: '2026-09-05T09:00',
+				end: '2026-09-05T13:00',
+		},
+		{
 				title: 'Native Species Bingo',
 				location: 'Al Retelle Conservation Area <a href="https://www.signupgenius.com/go/10C0444AEAA2FA6F9C16-64672538-native">sign up link</a>',
 				description: 'Get outdoors to learn a little more about the work that Conservation has been doing to remove invasives at Al Retelle Conservation Area and play a fun game to better examine what has been accomplished!   Anyone can participate free of charge. This game has been organized by Andover Conservation and although <a href="https://www.signupgenius.com/go/10C0444AEAA2FA6F9C16-64672538-native">registration</a> is not required, it is appreciated. There will be prizes for those who can find the most native species!',
