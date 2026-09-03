@@ -12,6 +12,30 @@
 var avisEvents = [
 
 		{
+				title: 'Andover Autumn Ales & Trails (AA&T)',
+				location: 'Shawsheen and Vale Reservations',
+				description: 'Hike Along the Shawsheen River Through the Shawsheen and Vale Reservation then meet back at Oak and Iron. <a href="https://activities.outdoors.org/s/oc-activity/a5UVX000001GOsD2AW/act00023153">Registration Opens Thursday, September 17, 2026 | 4:00 PM</a>',
+				start: '2026-09-27T13:30'
+		},
+		{
+				title: 'Andover Autumn Ales & Trails (AA&T)',
+				location: 'Deer Jump and Retelle Reservations',
+				description: 'Merrimack River, Deer Jump and Retelle Reservation then meet back at Oak and Iron. <a href="https://activities.outdoors.org/s/oc-activity/a5UVX000001Gwp32AC/act00023290">Registration Opens Thursday, September 24, 2026 | 4:00 PM</a>',
+				start: '2026-10-04T13:30'
+		},
+		{
+				title: 'Andover Autumn Ales & Trails (AA&T)',
+				location: 'Boston Hill and the Charles Ward Reservation',
+				description: 'Boston Hill and the Charles Ward Reservation then meet back at Oak and Iron. <a href="https://activities.outdoors.org/s/oc-activity/a5UVX000001GxTN2A0/act00023296">Registration Opens Thursday, October 1, 2026 | 4:00 PM</a>',
+				start: '2026-10-11T13:30'
+		},
+		{
+				title: 'Andover Autumn Ales & Trails (AA&T)',
+				location: 'Mary French, Hammond and Skug Reservation Loop',
+				description: 'Mary French, Hammond and Skug Reservation Loop then meet back at Oak and Iron. <a href="https://activities.outdoors.org/s/oc-activity/a5UVX000001GxYD2A0/act00023297">Registration Opens Thursday, October 8, 2026 | 4:00 PM</a>',
+				start: '2026-10-18T13:30'
+		},
+		{
 				title: 'Senior Involvement Fair',
 				location: 'The Robb Center, 30 Whittier Ct., Andover',
 				description: 'Stop by the AVIS table at the Senior Involvement Fair to learn all about Eco Team, ongoing hikes, The Goldsmith Woodlands All Persons Trail, and other ways to get involved with AVIS.',
