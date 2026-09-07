@@ -1,0 +1,56 @@
+---
+layout: default
+title: AVIS - Contact Us
+---
+
+<div id="contactus" class="page">
+
+	<h3>Let us know about issues on a reservation</h3>
+	<HR>
+		<p>Use this form to notify us about things found on a reservation that may need our attention, for example a tree obstructing a trail.</p>
+
+		<form action="https://api.staticforms.dev/submit" method="POST">
+			<input type="hidden" name="apiKey" value="sf_6c50c3d58f3af19f7917125c" readonly />
+			<input type="hidden" name="subject" value="AVIS reservation form submission" readonly />
+			<input type="hidden" id="redirectTo" name="redirectTo" readonly />
+			<input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off"/>
+			<table>
+				<tr>
+					<td style="border: 4px solid white;">Your name:</td>
+					<td style="border: 4px solid white;"><input type="text" name="name" required /></td>
+				</tr>
+
+				<tr>
+					<td style="border: 4px solid white;">Your email:</td>
+					<td style="border: 4px solid white;"><input type="email" name="email" required /></td>
+				</tr>
+
+				<tr>
+					<td style="border: 4px solid white;">Your phone number:</td>
+					<td style="border: 4px solid white;"><input type="phone" name="phone"  /></td>
+				</tr>
+
+				<tr>
+					<td style="border: 4px solid white;">Reservation name:</td>
+					<td style="border: 4px solid white;"><input type="text" name="reservation" /></td>
+				</tr>
+
+				<tr>
+					<td style="border: 4px solid white">Issue:</td>
+					<td style="border: 4px solid white"><textarea name="message" required></textarea></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center"><button type="submit">Send</button></td>
+				</tr>
+			</table>
+		</form>
+
+  </main>
+</div>
+
+<script>
+	const path = "/contactus-thankyou.html";
+	const url = new URL(path, window.location.origin);
+	document.getElementById("redirectTo").value = url.href;
+</script>
