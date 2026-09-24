@@ -209,11 +209,19 @@ var avisEvents = [
     },
     
     {
-	title: 'Eco Team Invasive Plant identification and Removal Session',
+	title: '<b>Cancelled</b> Eco Team Invasive Plant identification and Removal Session',
 	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
 	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> and read the <a href="https://blog.avisandover.org/2026/01/avis-eco-team/">blog</a> for more information.',
 	start: '2026-09-26T08:30',
 	end: '2026-09-26T11:00',
+    },
+    
+    {
+	title: 'Eco Team Invasive Plant identification and Removal Session',
+	location: '<a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Sign up for Eco Team emails</a>',
+	description: 'Sign up for Eco Team <a href="https://avisandover.us13.list-manage.com/subscribe?u=390148158ff838c2a9e36871e&id=f4d8e6aeed">Emails</a> and read the <a href="https://blog.avisandover.org/2026/01/avis-eco-team/">blog</a> for more information.',
+	start: '2026-10-03T08:30',
+	end: '2026-10-03T11:00',
     },
     
     {
